@@ -1,0 +1,302 @@
+Args: -run-count=10
+Running tetris 10 times
+_ _ _ _ _ _ _ _ _ _ 
+_ _ _ _ _ _ _ _ _ O 
+_ _ _ _ _ _ _ _ _ O 
+_ _ _ _ _ _ _ _ _ O 
+_ _ _ _ _ _ _ _ _ O 
+_ _ _ _ _ _ _ _ _ O 
+_ _ _ _ _ _ _ _ _ O 
+O O _ _ _ _ _ _ O O 
+O O O _ _ _ _ _ O O 
+O O O O O _ _ _ O O 
+O O O O O _ _ O O O 
+_ O O O O O O O O O 
+O O O O O O O O _ O 
+_ O O O O O O O O O 
+O O O O O O O O _ O 
+O O O O O O _ O O O 
+O O O O O O O _ O O 
+O O O O O O O _ O O 
+O O O O O O O O O _ 
+O O O O O _ O O O O 
+O O _ O O O O O O O 
+O O O O O O O O O _ 
+O O O _ O O O O O O 
+O O O O _ O O O O O 
+
+Total Lines Cleared on run# 0: 82058
+
+
+--- GAMEOVER ---
+
+_ _ _ _ _ _ _ _ _ _ 
+_ _ _ _ _ _ _ _ _ _ 
+_ _ _ _ _ _ _ _ _ _ 
+_ _ _ _ _ _ _ _ _ _ 
+_ _ _ _ _ O _ _ _ _ 
+_ _ _ _ _ O O O _ _ 
+_ _ _ _ O O O O _ _ 
+_ _ _ _ O O O O _ _ 
+O _ _ _ O O O O _ _ 
+O _ _ _ O O O O O O 
+O O O O O O O O _ O 
+O O O O O O O O O _ 
+O O O O O O O O O _ 
+O O O O O O _ O O O 
+O O O O O O _ O O O 
+O O O O O O _ O O O 
+_ O O O O O O O O O 
+O O O _ O O O O O O 
+O O O _ O O O O O O 
+_ O O O O O O O O O 
+O O O O O O O O O _ 
+O O O O _ O O O O O 
+O O _ O O O O O O O 
+O O O O O O O O _ O 
+
+Total Lines Cleared on run# 1: 152328
+
+
+--- GAMEOVER ---
+
+_ _ _ _ _ _ _ _ _ _ 
+_ _ _ _ _ _ _ _ _ _ 
+_ _ _ _ _ _ _ _ _ _ 
+O _ _ _ _ _ _ _ _ _ 
+O _ O _ _ _ _ _ _ _ 
+O O O _ _ _ _ _ _ _ 
+O O O _ _ _ _ _ _ O 
+O O O O _ _ _ _ _ O 
+O O O O O O _ _ _ O 
+O O O O O O O _ _ O 
+O O O O O _ O O O O 
+O O O O O _ O O O O 
+O O _ O O O O O O O 
+O O O O O O O _ O O 
+O O O O O O O O _ O 
+_ O O O O O O O O O 
+O O O _ O O O O O O 
+O O O O O O _ O O O 
+_ O O O O O O O O O 
+O O O O O O _ O O O 
+O O O O O O O O O _ 
+O O O O O _ O O O O 
+_ O O O O O O O O O 
+O O O O O _ O O O O 
+
+Total Lines Cleared on run# 2: 108927
+
+
+--- GAMEOVER ---
+
+_ _ _ _ _ _ _ _ _ _ 
+_ _ _ _ _ _ _ _ _ _ 
+_ _ _ _ _ _ _ _ _ _ 
+_ _ _ _ _ _ _ _ _ _ 
+_ _ _ _ _ _ _ _ _ O 
+_ _ _ _ _ _ _ _ _ O 
+_ _ _ _ _ _ _ O O O 
+O _ _ _ _ _ O O O O 
+O O O O _ _ O O O O 
+O O O O _ _ O O O O 
+O O O O _ _ O O O O 
+O O O O _ _ O O O O 
+O O O O _ _ O O O O 
+O O O O _ _ O O O O 
+O O O O _ _ O O O O 
+O O O O O _ O O O O 
+O O O O _ _ O O O O 
+O O O O O _ O O O O 
+O O O O O _ O O O O 
+O O O O _ _ O O O O 
+O O O O O _ O O O O 
+O O O O O _ O O O O 
+O O O O O _ O O O O 
+O O O _ O O _ O O O 
+
+Total Lines Cleared on run# 3: 236179
+
+
+--- GAMEOVER ---
+
+_ _ _ _ _ _ _ _ _ _ 
+_ _ _ _ _ _ _ _ _ O 
+_ _ _ _ _ _ _ _ _ O 
+_ _ _ _ _ _ _ _ _ O 
+_ _ _ _ _ _ _ _ _ O 
+_ _ _ _ _ _ _ _ O O 
+O _ _ _ _ _ _ O O O 
+O O _ _ _ _ _ O O O 
+O O _ _ O _ _ O O O 
+O O O O O _ _ O O O 
+O O O O O O O O O _ 
+O O O O _ O O O O O 
+O _ O O O O O O O O 
+O O O O O O O O O _ 
+O O _ O O O O O O _ 
+O O O O O O O O O _ 
+O O O _ O O O O O O 
+O O _ O O O O O O _ 
+O O O O O O O _ O O 
+O O O O O _ O O O O 
+O O O O O O O O O _ 
+O O O O O O O O O _ 
+O _ O O O O O O O O 
+O O O O O _ O O O O 
+
+Total Lines Cleared on run# 4: 101905
+
+
+--- GAMEOVER ---
+
+_ _ _ _ _ _ _ _ _ _ 
+_ _ _ _ _ _ _ _ _ _ 
+_ _ _ _ _ _ _ _ _ _ 
+_ _ _ _ _ _ _ _ _ _ 
+_ _ _ _ _ _ _ _ _ O 
+_ _ _ _ _ _ _ _ _ O 
+_ _ _ O O O _ _ O O 
+_ _ O O O O _ _ O O 
+_ _ O O O O _ O O O 
+_ _ O O O O O O O O 
+O _ O O O O O O O O 
+O O O O O O O O _ O 
+O O O O O O O O _ O 
+O _ O O O O O O O O 
+O _ O O O O O O O O 
+O O O O O O O O O _ 
+O O O _ O O O O O O 
+O _ O O O O O O O O 
+O O O O O O O O O _ 
+O O O O O O O _ O O 
+O O O O O O O O _ O 
+O O O _ O O O O O O 
+O O O O O _ O O O O 
+O O O O O _ O O O O 
+
+Total Lines Cleared on run# 5: 23846
+
+
+--- GAMEOVER ---
+
+_ _ _ _ _ _ _ _ _ _ 
+_ _ _ _ _ _ _ _ _ _ 
+_ _ _ _ _ _ _ _ _ _ 
+O _ _ _ _ _ _ _ _ _ 
+O O _ _ _ _ _ _ _ _ 
+O O _ _ _ _ _ _ _ _ 
+O O _ _ _ _ _ _ _ O 
+O O _ _ _ _ _ _ _ O 
+O O _ O O O O _ _ O 
+O O O O O O O _ _ O 
+O O O O O _ O O O O 
+O O O O O _ O O O O 
+_ O O O O O O O O O 
+O O _ O O O O O O O 
+O O O O O O O O _ O 
+O O O O O _ O O O O 
+O O O O O O _ O O O 
+O _ O O O O O O O O 
+O O O O O O _ O O O 
+_ O O O O O O O O O 
+_ O O O O O O O O O 
+O O O O O O _ O O O 
+O O O O O O _ O O O 
+O O O O O O O O O _ 
+
+Total Lines Cleared on run# 6: 375371
+
+
+--- GAMEOVER ---
+
+_ _ _ _ _ _ _ _ _ _ 
+_ _ _ _ _ _ _ _ _ _ 
+_ _ _ _ _ _ _ _ _ _ 
+_ _ _ _ _ _ _ _ _ _ 
+O _ _ _ _ _ _ _ O O 
+O _ _ _ _ _ _ O O O 
+O O _ _ _ _ _ O O O 
+O O _ _ _ _ O O O O 
+O O _ _ _ _ O O O O 
+O O _ _ _ O O O O O 
+O O _ _ _ O O O O O 
+O O _ _ _ O O O O O 
+O O _ _ _ O O O O O 
+O O _ _ _ O O O O O 
+O O _ _ O O O _ O O 
+O O O _ O O O O O O 
+O O O O _ O O O O O 
+O O O O _ O O O O O 
+O O _ _ O O O O O O 
+O O O _ O O O O O O 
+O O O _ O O O O O O 
+O O _ _ O O O O O O 
+O O O _ O O O O O O 
+O O O _ O O O O O O 
+
+Total Lines Cleared on run# 7: 749
+
+
+--- GAMEOVER ---
+
+_ _ _ _ _ _ _ _ _ _ 
+_ _ _ _ _ _ _ _ _ _ 
+_ _ _ _ _ _ _ _ _ _ 
+_ _ _ _ _ _ _ _ _ _ 
+_ _ _ _ _ _ _ _ _ O 
+_ _ _ _ _ _ _ _ _ O 
+O _ _ _ _ _ _ _ _ O 
+O _ _ _ _ _ _ _ O O 
+O O _ _ _ _ _ _ O O 
+O O _ _ O O _ O O O 
+_ O O O O O O O O O 
+O O O O O _ O O O O 
+O _ O O O O O O O O 
+O O O O O O O O O _ 
+O O O O _ O O O O O 
+O O O O O O O O O _ 
+O O O O O O O O O _ 
+O O _ O O O O O O O 
+O O _ O O O _ O O O 
+O O O O O O _ O O O 
+O O O O O O O O _ O 
+O _ O O O O O O O O 
+O O O O O O O _ O O 
+O O O O O O O _ O O 
+
+Total Lines Cleared on run# 8: 55178
+
+
+--- GAMEOVER ---
+
+_ _ _ _ _ _ _ _ _ _ 
+_ _ _ _ _ _ _ _ _ _ 
+_ _ _ _ _ _ _ _ _ _ 
+_ _ _ _ _ _ _ _ _ _ 
+O O _ _ _ _ _ _ _ _ 
+O O _ _ _ _ _ _ _ _ 
+O O _ _ _ _ _ _ _ _ 
+O O _ _ _ _ _ _ _ _ 
+O O _ _ _ _ _ _ _ O 
+O O _ _ O _ _ _ O O 
+O O _ O O O _ O O O 
+O O _ O O O O O O O 
+O O O O O _ O O O O 
+O O O O O O O O _ O 
+O O O O O O O O _ O 
+_ O O O O O O O O O 
+O O O O _ O O O O O 
+O O O O O O O O O _ 
+O O O _ O O O O O O 
+O O _ O O O O O O O 
+O O _ O O O O O O _ 
+O O O O O O O O O _ 
+O O O _ O O O O O O 
+_ O O O O O O O O O 
+
+Total Lines Cleared on run# 9: 543021
+
+
+--- GAMEOVER ---
+

@@ -1,0 +1,93 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+<sourceFile name="">
+<directive functionLabel="" functionName="getRowScores" label="">
+<pragma name="INLINE">
+<option name="off" positionalBoolean="1" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="getRowScores" label="">
+<pragma name="PIPELINE">
+<option name="II" value="5"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="getColScores" label="">
+<pragma name="INLINE">
+<option name="off" positionalBoolean="1" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="getColScores" label="">
+<pragma name="PIPELINE">
+<option name="II" value="20"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="getTotalRowScore" label="">
+<pragma name="PIPELINE">
+<option name="II" value="10"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="getTotalColScore" label="">
+<pragma name="PIPELINE">
+<option name="II" value="5"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="elTetris2" label="">
+<pragma name="INTERFACE">
+<option name="m_axi" positionalBoolean="mode" value=""/>
+<option name="depth" value="9158"/>
+<option name="port" positionalBoolean="4" value="mem_int"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="elTetris2" label="">
+<pragma name="INTERFACE">
+<option name="m_axi" positionalBoolean="mode" value=""/>
+<option name="depth" value="9158"/>
+<option name="port" positionalBoolean="4" value="mem_flt"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="elTetris2" label="">
+<pragma name="INTERFACE">
+<option name="s_axilite" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="board_offset"/>
+<option name="bundle" value="CTRL_BUS"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="elTetris2" label="">
+<pragma name="INTERFACE">
+<option name="s_axilite" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="landingHeight_offset"/>
+<option name="bundle" value="CTRL_BUS"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="elTetris2" label="">
+<pragma name="INTERFACE">
+<option name="s_axilite" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="num_batches"/>
+<option name="bundle" value="CTRL_BUS"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="elTetris2" label="">
+<pragma name="INTERFACE">
+<option name="s_axilite" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="scoreArrayOffset"/>
+<option name="bundle" value="CTRL_BUS"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="elTetris2" label="">
+<pragma name="INTERFACE">
+<option name="s_axilite" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="return"/>
+<option name="bundle" value="CTRL_BUS"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="elTetris2" label="">
+<pragma name="PIPELINE">
+<option name="II" value="240"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="elTetris2" label="">
+<pragma name="PIPELINE">
+<option name="II" value="4"/>
+</pragma>
+</directive>
+</sourceFile>
+</AutoPilot:ProjectResources>

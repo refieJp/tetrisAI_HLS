@@ -1,0 +1,98 @@
+#include "tetris.h"
+#include "board.h"
+#include "util/util.h"
+#include "eiTetrisAI/eiTetris.h"
+#include "xil_printf.h"
+#include "platform.h"
+
+#define MAX_ROTATION 4
+
+volatile unsigned int * led = (unsigned int *)0x40000000;
+volatile unsigned int * swt = (unsigned int *)0x40010000;
+
+using namespace std;
+
+// Tetris Simulator
+int main ()
+{
+  print("Starting Tetris\n");
+  init_platform();
+
+  *led = 3;
+  Tetris *myTetris = new Tetris();
+  bool gameOver = false;
+  int rotation, shift;
+  int width;
+  
+
+// O piece for easier test
+//
+//  do{
+//    myTetris->generate_piece();
+//  }while(myTetris->get_piece() != 'O');
+//
+  char *boardMatrix = new char[MAX_ROTATION*BOARD_WIDTH*BOARD_WIDTH*BOARD_HEIGHT];
+  char *curPiece = new char[PIECE_MAX_WIDTH*PIECE_MAX_HEIGHT];
+  char *curBoard = new char[BOARD_WIDTH*BOARD_HEIGHT];
+  int *landingHeightArray = new int[MAX_ROTATION*BOARD_WIDTH];
+  size_t last_lines_cleared = 0;
+
+  print("Tetris buffers allocated\n");
+
+  while(!gameOver)
+  {
+    myTetris->generate_piece();
+
+    width = myTetris->curPiece->getWidth(rotation);
+
+    myTetris->get_board()->get_state(curBoard);
+
+    for (int curRot = 0; curRot < 4; curRot++) {
+      myTetris->curPiece->getPiece(curPiece, curRot);
+      for (int curShift = 0; curShift < BOARD_WIDTH; curShift++) {
+        char *boardLocation = boardMatrix + (curRot*BOARD_WIDTH + curShift)*BOARD_HEIGHT*BOARD_WIDTH;
+        int *landingHeightCurrent = landingHeightArray + (curRot*BOARD_WIDTH + curShift);
+        if (curShift + myTetris->curPiece->getWidth(curRot) - 1 < BOARD_WIDTH)
+          placePiece(curBoard, curPiece, curShift, boardLocation, landingHeightCurrent); 
+        else
+          memset(boardLocation, -1, BOARD_HEIGHT*BOARD_WIDTH);
+      }
+    }
+
+    int status = getBestPlacement(boardMatrix, landingHeightArray, &shift, &rotation);
+    if (status) {
+      xil_printf("Error: status was %i\n", status);
+      return 1;
+    }
+
+    //fprintf(stdout, "Shift = %i :: Rotation = %i\n", shift, rotation);
+
+// TEMP CODE
+    //rotation = rand()%4;
+    //width = myTetris->curPiece->getWidth(rotation);
+    //shift = rand()%(BOARD_WIDTH-width+1);
+
+    if (last_lines_cleared != linesCleared) {
+      xil_printf("New line cleared. Lines cleared %zu\n", linesCleared);
+      last_lines_cleared = linesCleared;
+    }
+    gameOver = myTetris->place_piece(rotation, shift);
+  }
+  
+
+  size_t linesCleared = myTetris->get_board()->getTotalLinesCleared();
+  myTetris->get_board()->get_state(curBoard);
+  printBoard(curBoard);
+  xil_printf("Total Lines Cleared: %zu\n", linesCleared);
+  print("\n\n--- GAMEOVER ---\n\n");
+
+  delete[] boardMatrix;
+  delete[] curPiece;
+  delete[] curBoard;
+  delete[] landingHeightArray;
+  delete myTetris;
+
+  cleanup_platform();
+
+  return 0;
+}

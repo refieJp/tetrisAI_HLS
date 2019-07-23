@@ -1,0 +1,182 @@
+
+*** Running vivado
+    with args -log design_1_axi_quad_spi_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_axi_quad_spi_0_0.tcl
+
+
+****** Vivado v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source design_1_axi_quad_spi_0_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 397.637 ; gain = 81.922
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_quad_spi_0_0' [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/synth/design_1_axi_quad_spi_0_0.vhd:104]
+INFO: [Synth 8-638] synthesizing module 'axi_quad_spi' [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/2c94/hdl/axi_quad_spi_v3_2_rfs.vhd:33031]
+INFO: [Synth 8-638] synthesizing module 'axi_quad_spi_top' [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/2c94/hdl/axi_quad_spi_v3_2_rfs.vhd:31304]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'slave_attachment' [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-638] synthesizing module 'address_decoder' [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f' [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f' (1#1) [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized0' [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized0' (1#1) [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized1' [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized1' (1#1) [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized2' [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized2' (1#1) [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized3' [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized3' (1#1) [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized4' [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized4' (1#1) [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized5' [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized5' (1#1) [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized6' [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized6' (1#1) [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized7' [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized7' (1#1) [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized8' [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized8' (1#1) [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized9' [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized9' (1#1) [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized10' [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized10' (1#1) [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized11' [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized11' (1#1) [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized12' [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized12' (1#1) [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized13' [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized13' (1#1) [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized14' [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized14' (1#1) [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized15' [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized15' (1#1) [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized16' [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized16' (1#1) [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized17' [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized17' (1#1) [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized18' [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized18' (1#1) [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized19' [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized19' (1#1) [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized20' [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized20' (1#1) [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized21' [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized21' (1#1) [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized22' [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized22' (1#1) [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized23' [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized23' (1#1) [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized24' [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized24' (1#1) [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized25' [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif_v3_0_4_pselect_f__parameterized25' (1#1) [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'address_decoder' (2#1) [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (3#1) [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (4#1) [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'qspi_core_interface' [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/2c94/hdl/axi_quad_spi_v3_2_rfs.vhd:17844]
+INFO: [Synth 8-638] synthesizing module 'reset_sync_module' [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/2c94/hdl/axi_quad_spi_v3_2_rfs.vhd:2426]
+INFO: [Synth 8-256] done synthesizing module 'reset_sync_module' (5#1) [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/2c94/hdl/axi_quad_spi_v3_2_rfs.vhd:2426]
+INFO: [Synth 8-638] synthesizing module 'cross_clk_sync_fifo_1' [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/2c94/hdl/axi_quad_spi_v3_2_rfs.vhd:13594]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (6#1) [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized0' [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync__parameterized0' (6#1) [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized1' [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync__parameterized1' (6#1) [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'cross_clk_sync_fifo_1' (7#1) [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/2c94/hdl/axi_quad_spi_v3_2_rfs.vhd:13594]
+INFO: [Synth 8-638] synthesizing module 'async_fifo_fg' [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/c387/hdl/lib_fifo_v1_0_rfs.vhd:253]
+INFO: [Synth 8-256] done synthesizing module 'async_fifo_fg' (31#1) [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/c387/hdl/lib_fifo_v1_0_rfs.vhd:253]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized2' [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync__parameterized2' (31#1) [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'counter_f' [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/2c94/hdl/axi_quad_spi_v3_2_rfs.vhd:669]
+INFO: [Synth 8-256] done synthesizing module 'counter_f' (32#1) [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/2c94/hdl/axi_quad_spi_v3_2_rfs.vhd:669]
+INFO: [Synth 8-638] synthesizing module 'qspi_fifo_ifmodule' [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/2c94/hdl/axi_quad_spi_v3_2_rfs.vhd:12121]
+INFO: [Synth 8-256] done synthesizing module 'qspi_fifo_ifmodule' (33#1) [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/2c94/hdl/axi_quad_spi_v3_2_rfs.vhd:12121]
+INFO: [Synth 8-638] synthesizing module 'qspi_occupancy_reg' [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/2c94/hdl/axi_quad_spi_v3_2_rfs.vhd:3646]
+INFO: [Synth 8-256] done synthesizing module 'qspi_occupancy_reg' (34#1) [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/2c94/hdl/axi_quad_spi_v3_2_rfs.vhd:3646]
+INFO: [Synth 8-638] synthesizing module 'qspi_startup_block' [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/2c94/hdl/axi_quad_spi_v3_2_rfs.vhd:2928]
+INFO: [Synth 8-256] done synthesizing module 'qspi_startup_block' (35#1) [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/2c94/hdl/axi_quad_spi_v3_2_rfs.vhd:2928]
+INFO: [Synth 8-638] synthesizing module 'qspi_look_up_logic' [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/2c94/hdl/axi_quad_spi_v3_2_rfs.vhd:10234]
+INFO: [Synth 8-256] done synthesizing module 'qspi_look_up_logic' (39#1) [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/2c94/hdl/axi_quad_spi_v3_2_rfs.vhd:10234]
+INFO: [Synth 8-638] synthesizing module 'qspi_mode_control_logic' [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/2c94/hdl/axi_quad_spi_v3_2_rfs.vhd:3870]
+INFO: [Synth 8-256] done synthesizing module 'qspi_mode_control_logic' (40#1) [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/2c94/hdl/axi_quad_spi_v3_2_rfs.vhd:3870]
+INFO: [Synth 8-638] synthesizing module 'qspi_cntrl_reg' [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/2c94/hdl/axi_quad_spi_v3_2_rfs.vhd:12476]
+INFO: [Synth 8-256] done synthesizing module 'qspi_cntrl_reg' (41#1) [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/2c94/hdl/axi_quad_spi_v3_2_rfs.vhd:12476]
+INFO: [Synth 8-638] synthesizing module 'qspi_status_slave_sel_reg' [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/2c94/hdl/axi_quad_spi_v3_2_rfs.vhd:2657]
+INFO: [Synth 8-256] done synthesizing module 'qspi_status_slave_sel_reg' (42#1) [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/2c94/hdl/axi_quad_spi_v3_2_rfs.vhd:2657]
+INFO: [Synth 8-638] synthesizing module 'soft_reset' [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/2c94/hdl/axi_quad_spi_v3_2_rfs.vhd:874]
+INFO: [Synth 8-256] done synthesizing module 'soft_reset' (43#1) [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/2c94/hdl/axi_quad_spi_v3_2_rfs.vhd:874]
+INFO: [Synth 8-638] synthesizing module 'interrupt_control' [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/e956/hdl/interrupt_control_v3_1_vh_rfs.vhd:259]
+INFO: [Synth 8-256] done synthesizing module 'interrupt_control' (44#1) [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/e956/hdl/interrupt_control_v3_1_vh_rfs.vhd:259]
+INFO: [Synth 8-256] done synthesizing module 'qspi_core_interface' (45#1) [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/2c94/hdl/axi_quad_spi_v3_2_rfs.vhd:17844]
+INFO: [Synth 8-256] done synthesizing module 'axi_quad_spi_top' (46#1) [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/2c94/hdl/axi_quad_spi_v3_2_rfs.vhd:31304]
+INFO: [Synth 8-256] done synthesizing module 'axi_quad_spi' (47#1) [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ipshared/2c94/hdl/axi_quad_spi_v3_2_rfs.vhd:33031]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_quad_spi_0_0' (48#1) [d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ip/design_1_axi_quad_spi_0_0/synth/design_1_axi_quad_spi_0_0.vhd:104]
+Finished RTL Elaboration : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 562.961 ; gain = 247.246
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 562.961 ; gain = 247.246
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 764.137 ; gain = 0.000
+Finished Constraint Validation : Time (s): cpu = 00:00:35 ; elapsed = 00:00:46 . Memory (MB): peak = 764.137 ; gain = 448.422
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:35 ; elapsed = 00:00:46 . Memory (MB): peak = 764.137 ; gain = 448.422
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:46 . Memory (MB): peak = 764.137 ; gain = 448.422
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:37 ; elapsed = 00:00:48 . Memory (MB): peak = 764.137 ; gain = 448.422
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:51 . Memory (MB): peak = 764.137 ; gain = 448.422
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++-------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------+----------------+
+|Module Name  | RTL Object                                                                                                                                                                                                                                                              | Depth x Width | Implemented As | 
++-------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------+----------------+
+|rom          | rom[255]                                                                                                                                                                                                                                                                | 256x12        | LUT            | 
+|axi_quad_spi | NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/LOGIC_FOR_MD_12_GEN.SPI_MODE_1_LUT_LOGIC_I/QSPI_LOOK_UP_MODE_2_MEMORY_2.dist_mem_gen_QSPI_LOOK_UP_MODE_2_MEMORY_2.C_SPI_MODE_1_MIXED_ROM_I/synth_options.dist_mem_inst/gen_rom.rom_inst/rom[255] | 256x12        | LUT            | 
++-------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------+----------------+
+
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------+----------------------+--------------+
+|Module Name | RTL Object                                                                                                                                                                                                                 | Inference      | Size (Depth x Width) | Primitives   | 
++------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------+----------------------+--------------+
+|U0          | NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.RX_FIFO_II/USE_2N_DEPTH.V6_S6_AND_LATER.I_ASYNC_FIFO_BRAM/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg | User Attribute | 16 x 8               | RAM32M x 2   | 
+|U0          | NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.TX_FIFO_II/USE_2N_DEPTH.V6_S6_AND_LATER.I_ASYNC_FIFO_BRAM/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg | User Attribute | 16 x 8               | RAM32M x 2   | 
++------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:50 ; elapsed = 00:01:02 . Memory (MB): peak = 764.137 ; gain = 448.422
+Finished Timing Optimization : Time (s): cpu = 00:00:51 ; elapsed = 00:01:03 . Memory (MB): peak = 764.137 ; gain = 448.422
+Finished Technology Mapping : Time (s): cpu = 00:00:51 ; elapsed = 00:01:03 . Memory (MB): peak = 764.137 ; gain = 448.422
+Finished IO Insertion : Time (s): cpu = 00:00:52 ; elapsed = 00:01:04 . Memory (MB): peak = 764.137 ; gain = 448.422
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:52 ; elapsed = 00:01:04 . Memory (MB): peak = 764.137 ; gain = 448.422
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:52 ; elapsed = 00:01:04 . Memory (MB): peak = 764.137 ; gain = 448.422
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:52 ; elapsed = 00:01:04 . Memory (MB): peak = 764.137 ; gain = 448.422
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:52 ; elapsed = 00:01:04 . Memory (MB): peak = 764.137 ; gain = 448.422
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:52 ; elapsed = 00:01:04 . Memory (MB): peak = 764.137 ; gain = 448.422
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |LUT1      |    15|
+|2     |LUT2      |    84|
+|3     |LUT3      |    44|
+|4     |LUT4      |    50|
+|5     |LUT5      |    95|
+|6     |LUT6      |   145|
+|7     |MUXF7     |     4|
+|8     |MUXF8     |     2|
+|9     |RAM32M    |     4|
+|10    |SRL16E    |     2|
+|11    |STARTUPE2 |     1|
+|12    |FD        |    12|
+|13    |FDCE      |   146|
+|14    |FDPE      |    60|
+|15    |FDR       |    67|
+|16    |FDRE      |   290|
+|17    |FDSE      |     6|
++------+----------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:52 ; elapsed = 00:01:04 . Memory (MB): peak = 764.137 ; gain = 448.422
+synth_design: Time (s): cpu = 00:00:54 ; elapsed = 00:01:06 . Memory (MB): peak = 764.137 ; gain = 456.188

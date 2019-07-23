@@ -1,0 +1,17 @@
+elTetris2_fptruncbkb
+elTetris2_dadd_64cud
+elTetris2_dmul_64dEe
+elTetris2_ddiv_64eOg
+elTetris2_sitodp_fYi
+elTetris2_fadd_326jw
+elTetris2_boardArg8j
+elTetris2_boardArqcK
+elTetris2_rowElimKfY
+elTetris2_rowElimLf8
+elTetris2_rowScores
+elTetris2_CTRL_BUS_s_axi
+elTetris2_mem_int_m_axi
+elTetris2_mem_flt_m_axi
+getRowScores
+getColScores
+elTetris2

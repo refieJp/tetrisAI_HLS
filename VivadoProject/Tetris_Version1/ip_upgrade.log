@@ -1,0 +1,577 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
+| Date         : Wed Jun 26 23:32:28 2019
+| Host         : Kris-PC running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_generateBoardMatrix_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_generateBoardMatrix_0_1 from xilinx.com:TetrisPlacementCore:generateBoardMatrix:1.3 (Rev. 1906161426) to xilinx.com:TetrisPlacementCore:generateBoardMatrix:1.4 (Rev. 1906262328)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
+| Date         : Sun Jun 16 14:26:59 2019
+| Host         : Kris-PC running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_generateBoardMatrix_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_generateBoardMatrix_0_1 from xilinx.com:TetrisPlacementCore:generateBoardMatrix:1.1 (Rev. 1906150140) to xilinx.com:TetrisPlacementCore:generateBoardMatrix:1.3 (Rev. 1906161426)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
+| Date         : Sat Jun 15 01:40:56 2019
+| Host         : Kris-PC running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_generateBoardMatrix_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_generateBoardMatrix_0_0 from xilinx.com:TetrisPlacementCore:generateBoardMatrix:1.0 (Rev. 1906120058) to xilinx.com:TetrisPlacementCore:generateBoardMatrix:1.1 (Rev. 1906150140)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'design_1_generateBoardMatrix_0_0'.
+
+
+-Upgrade has removed interface 'm_axi_board'
+
+-Upgrade has removed interface 'm_axi_boardArray'
+
+-Upgrade has removed interface 'm_axi_landingHeightArray'
+
+-Upgrade has removed interface 'm_axi_placementValid'
+
+-Upgrade has added interface 'm_axi_mem' (xilinx.com:interface:aximm:1.0)
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_generateBoardMatrix_0_0'. These changes may impact your design.
+
+
+-Upgraded port 's_axi_CTRL_BUS_ARADDR' width 6 differs from original width 5
+
+-Upgraded port 's_axi_CTRL_BUS_AWADDR' width 6 differs from original width 5
+
+-Upgrade has removed port 'm_axi_boardArray_ARADDR'
+
+-Upgrade has removed port 'm_axi_boardArray_ARBURST'
+
+-Upgrade has removed port 'm_axi_boardArray_ARCACHE'
+
+-Upgrade has removed port 'm_axi_boardArray_ARLEN'
+
+-Upgrade has removed port 'm_axi_boardArray_ARLOCK'
+
+-Upgrade has removed port 'm_axi_boardArray_ARPROT'
+
+-Upgrade has removed port 'm_axi_boardArray_ARQOS'
+
+-Upgrade has removed port 'm_axi_boardArray_ARREADY'
+
+-Upgrade has removed port 'm_axi_boardArray_ARREGION'
+
+-Upgrade has removed port 'm_axi_boardArray_ARSIZE'
+
+-Upgrade has removed port 'm_axi_boardArray_ARVALID'
+
+-Upgrade has removed port 'm_axi_boardArray_AWADDR'
+
+-Upgrade has removed port 'm_axi_boardArray_AWBURST'
+
+-Upgrade has removed port 'm_axi_boardArray_AWCACHE'
+
+-Upgrade has removed port 'm_axi_boardArray_AWLEN'
+
+-Upgrade has removed port 'm_axi_boardArray_AWLOCK'
+
+-Upgrade has removed port 'm_axi_boardArray_AWPROT'
+
+-Upgrade has removed port 'm_axi_boardArray_AWQOS'
+
+-Upgrade has removed port 'm_axi_boardArray_AWREADY'
+
+-Upgrade has removed port 'm_axi_boardArray_AWREGION'
+
+-Upgrade has removed port 'm_axi_boardArray_AWSIZE'
+
+-Upgrade has removed port 'm_axi_boardArray_AWVALID'
+
+-Upgrade has removed port 'm_axi_boardArray_BREADY'
+
+-Upgrade has removed port 'm_axi_boardArray_BRESP'
+
+-Upgrade has removed port 'm_axi_boardArray_BVALID'
+
+-Upgrade has removed port 'm_axi_boardArray_RDATA'
+
+-Upgrade has removed port 'm_axi_boardArray_RLAST'
+
+-Upgrade has removed port 'm_axi_boardArray_RREADY'
+
+-Upgrade has removed port 'm_axi_boardArray_RRESP'
+
+-Upgrade has removed port 'm_axi_boardArray_RVALID'
+
+-Upgrade has removed port 'm_axi_boardArray_WDATA'
+
+-Upgrade has removed port 'm_axi_boardArray_WLAST'
+
+-Upgrade has removed port 'm_axi_boardArray_WREADY'
+
+-Upgrade has removed port 'm_axi_boardArray_WSTRB'
+
+-Upgrade has removed port 'm_axi_boardArray_WVALID'
+
+-Upgrade has removed port 'm_axi_board_ARADDR'
+
+-Upgrade has removed port 'm_axi_board_ARBURST'
+
+-Upgrade has removed port 'm_axi_board_ARCACHE'
+
+-Upgrade has removed port 'm_axi_board_ARLEN'
+
+-Upgrade has removed port 'm_axi_board_ARLOCK'
+
+-Upgrade has removed port 'm_axi_board_ARPROT'
+
+-Upgrade has removed port 'm_axi_board_ARQOS'
+
+-Upgrade has removed port 'm_axi_board_ARREADY'
+
+-Upgrade has removed port 'm_axi_board_ARREGION'
+
+-Upgrade has removed port 'm_axi_board_ARSIZE'
+
+-Upgrade has removed port 'm_axi_board_ARVALID'
+
+-Upgrade has removed port 'm_axi_board_AWADDR'
+
+-Upgrade has removed port 'm_axi_board_AWBURST'
+
+-Upgrade has removed port 'm_axi_board_AWCACHE'
+
+-Upgrade has removed port 'm_axi_board_AWLEN'
+
+-Upgrade has removed port 'm_axi_board_AWLOCK'
+
+-Upgrade has removed port 'm_axi_board_AWPROT'
+
+-Upgrade has removed port 'm_axi_board_AWQOS'
+
+-Upgrade has removed port 'm_axi_board_AWREADY'
+
+-Upgrade has removed port 'm_axi_board_AWREGION'
+
+-Upgrade has removed port 'm_axi_board_AWSIZE'
+
+-Upgrade has removed port 'm_axi_board_AWVALID'
+
+-Upgrade has removed port 'm_axi_board_BREADY'
+
+-Upgrade has removed port 'm_axi_board_BRESP'
+
+-Upgrade has removed port 'm_axi_board_BVALID'
+
+-Upgrade has removed port 'm_axi_board_RDATA'
+
+-Upgrade has removed port 'm_axi_board_RLAST'
+
+-Upgrade has removed port 'm_axi_board_RREADY'
+
+-Upgrade has removed port 'm_axi_board_RRESP'
+
+-Upgrade has removed port 'm_axi_board_RVALID'
+
+-Upgrade has removed port 'm_axi_board_WDATA'
+
+-Upgrade has removed port 'm_axi_board_WLAST'
+
+-Upgrade has removed port 'm_axi_board_WREADY'
+
+-Upgrade has removed port 'm_axi_board_WSTRB'
+
+-Upgrade has removed port 'm_axi_board_WVALID'
+
+-Upgrade has removed port 'm_axi_landingHeightArray_ARADDR'
+
+-Upgrade has removed port 'm_axi_landingHeightArray_ARBURST'
+
+-Upgrade has removed port 'm_axi_landingHeightArray_ARCACHE'
+
+-Upgrade has removed port 'm_axi_landingHeightArray_ARLEN'
+
+-Upgrade has removed port 'm_axi_landingHeightArray_ARLOCK'
+
+-Upgrade has removed port 'm_axi_landingHeightArray_ARPROT'
+
+-Upgrade has removed port 'm_axi_landingHeightArray_ARQOS'
+
+-Upgrade has removed port 'm_axi_landingHeightArray_ARREADY'
+
+-Upgrade has removed port 'm_axi_landingHeightArray_ARREGION'
+
+-Upgrade has removed port 'm_axi_landingHeightArray_ARSIZE'
+
+-Upgrade has removed port 'm_axi_landingHeightArray_ARVALID'
+
+-Upgrade has removed port 'm_axi_landingHeightArray_AWADDR'
+
+-Upgrade has removed port 'm_axi_landingHeightArray_AWBURST'
+
+-Upgrade has removed port 'm_axi_landingHeightArray_AWCACHE'
+
+-Upgrade has removed port 'm_axi_landingHeightArray_AWLEN'
+
+-Upgrade has removed port 'm_axi_landingHeightArray_AWLOCK'
+
+-Upgrade has removed port 'm_axi_landingHeightArray_AWPROT'
+
+-Upgrade has removed port 'm_axi_landingHeightArray_AWQOS'
+
+-Upgrade has removed port 'm_axi_landingHeightArray_AWREADY'
+
+-Upgrade has removed port 'm_axi_landingHeightArray_AWREGION'
+
+-Upgrade has removed port 'm_axi_landingHeightArray_AWSIZE'
+
+-Upgrade has removed port 'm_axi_landingHeightArray_AWVALID'
+
+-Upgrade has removed port 'm_axi_landingHeightArray_BREADY'
+
+-Upgrade has removed port 'm_axi_landingHeightArray_BRESP'
+
+-Upgrade has removed port 'm_axi_landingHeightArray_BVALID'
+
+-Upgrade has removed port 'm_axi_landingHeightArray_RDATA'
+
+-Upgrade has removed port 'm_axi_landingHeightArray_RLAST'
+
+-Upgrade has removed port 'm_axi_landingHeightArray_RREADY'
+
+-Upgrade has removed port 'm_axi_landingHeightArray_RRESP'
+
+-Upgrade has removed port 'm_axi_landingHeightArray_RVALID'
+
+-Upgrade has removed port 'm_axi_landingHeightArray_WDATA'
+
+-Upgrade has removed port 'm_axi_landingHeightArray_WLAST'
+
+-Upgrade has removed port 'm_axi_landingHeightArray_WREADY'
+
+-Upgrade has removed port 'm_axi_landingHeightArray_WSTRB'
+
+-Upgrade has removed port 'm_axi_landingHeightArray_WVALID'
+
+-Upgrade has removed port 'm_axi_placementValid_ARADDR'
+
+-Upgrade has removed port 'm_axi_placementValid_ARBURST'
+
+-Upgrade has removed port 'm_axi_placementValid_ARCACHE'
+
+-Upgrade has removed port 'm_axi_placementValid_ARLEN'
+
+-Upgrade has removed port 'm_axi_placementValid_ARLOCK'
+
+-Upgrade has removed port 'm_axi_placementValid_ARPROT'
+
+-Upgrade has removed port 'm_axi_placementValid_ARQOS'
+
+-Upgrade has removed port 'm_axi_placementValid_ARREADY'
+
+-Upgrade has removed port 'm_axi_placementValid_ARREGION'
+
+-Upgrade has removed port 'm_axi_placementValid_ARSIZE'
+
+-Upgrade has removed port 'm_axi_placementValid_ARVALID'
+
+-Upgrade has removed port 'm_axi_placementValid_AWADDR'
+
+-Upgrade has removed port 'm_axi_placementValid_AWBURST'
+
+-Upgrade has removed port 'm_axi_placementValid_AWCACHE'
+
+-Upgrade has removed port 'm_axi_placementValid_AWLEN'
+
+-Upgrade has removed port 'm_axi_placementValid_AWLOCK'
+
+-Upgrade has removed port 'm_axi_placementValid_AWPROT'
+
+-Upgrade has removed port 'm_axi_placementValid_AWQOS'
+
+-Upgrade has removed port 'm_axi_placementValid_AWREADY'
+
+-Upgrade has removed port 'm_axi_placementValid_AWREGION'
+
+-Upgrade has removed port 'm_axi_placementValid_AWSIZE'
+
+-Upgrade has removed port 'm_axi_placementValid_AWVALID'
+
+-Upgrade has removed port 'm_axi_placementValid_BREADY'
+
+-Upgrade has removed port 'm_axi_placementValid_BRESP'
+
+-Upgrade has removed port 'm_axi_placementValid_BVALID'
+
+-Upgrade has removed port 'm_axi_placementValid_RDATA'
+
+-Upgrade has removed port 'm_axi_placementValid_RLAST'
+
+-Upgrade has removed port 'm_axi_placementValid_RREADY'
+
+-Upgrade has removed port 'm_axi_placementValid_RRESP'
+
+-Upgrade has removed port 'm_axi_placementValid_RVALID'
+
+-Upgrade has removed port 'm_axi_placementValid_WDATA'
+
+-Upgrade has removed port 'm_axi_placementValid_WLAST'
+
+-Upgrade has removed port 'm_axi_placementValid_WREADY'
+
+-Upgrade has removed port 'm_axi_placementValid_WSTRB'
+
+-Upgrade has removed port 'm_axi_placementValid_WVALID'
+
+-Upgrade has added port 'm_axi_mem_ARADDR'
+
+-Upgrade has added port 'm_axi_mem_ARBURST'
+
+-Upgrade has added port 'm_axi_mem_ARCACHE'
+
+-Upgrade has added port 'm_axi_mem_ARLEN'
+
+-Upgrade has added port 'm_axi_mem_ARLOCK'
+
+-Upgrade has added port 'm_axi_mem_ARPROT'
+
+-Upgrade has added port 'm_axi_mem_ARQOS'
+
+-Upgrade has added port 'm_axi_mem_ARREADY'
+
+-Upgrade has added port 'm_axi_mem_ARREGION'
+
+-Upgrade has added port 'm_axi_mem_ARSIZE'
+
+-Upgrade has added port 'm_axi_mem_ARVALID'
+
+-Upgrade has added port 'm_axi_mem_AWADDR'
+
+-Upgrade has added port 'm_axi_mem_AWBURST'
+
+-Upgrade has added port 'm_axi_mem_AWCACHE'
+
+-Upgrade has added port 'm_axi_mem_AWLEN'
+
+-Upgrade has added port 'm_axi_mem_AWLOCK'
+
+-Upgrade has added port 'm_axi_mem_AWPROT'
+
+-Upgrade has added port 'm_axi_mem_AWQOS'
+
+-Upgrade has added port 'm_axi_mem_AWREADY'
+
+-Upgrade has added port 'm_axi_mem_AWREGION'
+
+-Upgrade has added port 'm_axi_mem_AWSIZE'
+
+-Upgrade has added port 'm_axi_mem_AWVALID'
+
+-Upgrade has added port 'm_axi_mem_BREADY'
+
+-Upgrade has added port 'm_axi_mem_BRESP'
+
+-Upgrade has added port 'm_axi_mem_BVALID'
+
+-Upgrade has added port 'm_axi_mem_RDATA'
+
+-Upgrade has added port 'm_axi_mem_RLAST'
+
+-Upgrade has added port 'm_axi_mem_RREADY'
+
+-Upgrade has added port 'm_axi_mem_RRESP'
+
+-Upgrade has added port 'm_axi_mem_RVALID'
+
+-Upgrade has added port 'm_axi_mem_WDATA'
+
+-Upgrade has added port 'm_axi_mem_WLAST'
+
+-Upgrade has added port 'm_axi_mem_WREADY'
+
+-Upgrade has added port 'm_axi_mem_WSTRB'
+
+-Upgrade has added port 'm_axi_mem_WVALID'
+
+
+4. Customization warnings
+-------------------------
+
+Parameter 'C_M_AXI_BOARD_ENABLE_ID_PORTS' is no longer present on the upgraded IP 'design_1_generateBoardMatrix_0_0', and cannot be set to 'false'
+
+Parameter 'C_M_AXI_BOARD_ID_WIDTH' is no longer present on the upgraded IP 'design_1_generateBoardMatrix_0_0', and cannot be set to '1'
+
+Parameter 'C_M_AXI_BOARD_DATA_WIDTH' is no longer present on the upgraded IP 'design_1_generateBoardMatrix_0_0', and cannot be set to '32'
+
+Parameter 'C_M_AXI_BOARD_ENABLE_USER_PORTS' is no longer present on the upgraded IP 'design_1_generateBoardMatrix_0_0', and cannot be set to 'false'
+
+Parameter 'C_M_AXI_BOARD_AWUSER_WIDTH' is no longer present on the upgraded IP 'design_1_generateBoardMatrix_0_0', and cannot be set to '1'
+
+Parameter 'C_M_AXI_BOARD_WUSER_WIDTH' is no longer present on the upgraded IP 'design_1_generateBoardMatrix_0_0', and cannot be set to '1'
+
+Parameter 'C_M_AXI_BOARD_BUSER_WIDTH' is no longer present on the upgraded IP 'design_1_generateBoardMatrix_0_0', and cannot be set to '1'
+
+Parameter 'C_M_AXI_BOARD_ARUSER_WIDTH' is no longer present on the upgraded IP 'design_1_generateBoardMatrix_0_0', and cannot be set to '1'
+
+Parameter 'C_M_AXI_BOARD_RUSER_WIDTH' is no longer present on the upgraded IP 'design_1_generateBoardMatrix_0_0', and cannot be set to '1'
+
+Parameter 'C_M_AXI_BOARD_USER_VALUE' is no longer present on the upgraded IP 'design_1_generateBoardMatrix_0_0', and cannot be set to '0x00000000'
+
+Parameter 'C_M_AXI_BOARD_PROT_VALUE' is no longer present on the upgraded IP 'design_1_generateBoardMatrix_0_0', and cannot be set to '"000"'
+
+Parameter 'C_M_AXI_BOARD_CACHE_VALUE' is no longer present on the upgraded IP 'design_1_generateBoardMatrix_0_0', and cannot be set to '"0011"'
+
+Parameter 'C_M_AXI_BOARD_TARGET_ADDR' is no longer present on the upgraded IP 'design_1_generateBoardMatrix_0_0', and cannot be set to '0x00000000'
+
+Parameter 'C_M_AXI_BOARDARRAY_ENABLE_ID_PORTS' is no longer present on the upgraded IP 'design_1_generateBoardMatrix_0_0', and cannot be set to 'false'
+
+Parameter 'C_M_AXI_BOARDARRAY_ID_WIDTH' is no longer present on the upgraded IP 'design_1_generateBoardMatrix_0_0', and cannot be set to '1'
+
+Parameter 'C_M_AXI_BOARDARRAY_DATA_WIDTH' is no longer present on the upgraded IP 'design_1_generateBoardMatrix_0_0', and cannot be set to '32'
+
+Parameter 'C_M_AXI_BOARDARRAY_ENABLE_USER_PORTS' is no longer present on the upgraded IP 'design_1_generateBoardMatrix_0_0', and cannot be set to 'false'
+
+Parameter 'C_M_AXI_BOARDARRAY_AWUSER_WIDTH' is no longer present on the upgraded IP 'design_1_generateBoardMatrix_0_0', and cannot be set to '1'
+
+Parameter 'C_M_AXI_BOARDARRAY_WUSER_WIDTH' is no longer present on the upgraded IP 'design_1_generateBoardMatrix_0_0', and cannot be set to '1'
+
+Parameter 'C_M_AXI_BOARDARRAY_BUSER_WIDTH' is no longer present on the upgraded IP 'design_1_generateBoardMatrix_0_0', and cannot be set to '1'
+
+Parameter 'C_M_AXI_BOARDARRAY_ARUSER_WIDTH' is no longer present on the upgraded IP 'design_1_generateBoardMatrix_0_0', and cannot be set to '1'
+
+Parameter 'C_M_AXI_BOARDARRAY_RUSER_WIDTH' is no longer present on the upgraded IP 'design_1_generateBoardMatrix_0_0', and cannot be set to '1'
+
+Parameter 'C_M_AXI_BOARDARRAY_USER_VALUE' is no longer present on the upgraded IP 'design_1_generateBoardMatrix_0_0', and cannot be set to '0x00000000'
+
+Parameter 'C_M_AXI_BOARDARRAY_PROT_VALUE' is no longer present on the upgraded IP 'design_1_generateBoardMatrix_0_0', and cannot be set to '"000"'
+
+Parameter 'C_M_AXI_BOARDARRAY_CACHE_VALUE' is no longer present on the upgraded IP 'design_1_generateBoardMatrix_0_0', and cannot be set to '"0011"'
+
+Parameter 'C_M_AXI_BOARDARRAY_TARGET_ADDR' is no longer present on the upgraded IP 'design_1_generateBoardMatrix_0_0', and cannot be set to '0x00000000'
+
+Parameter 'C_M_AXI_LANDINGHEIGHTARRAY_ENABLE_ID_PORTS' is no longer present on the upgraded IP 'design_1_generateBoardMatrix_0_0', and cannot be set to 'false'
+
+Parameter 'C_M_AXI_LANDINGHEIGHTARRAY_ID_WIDTH' is no longer present on the upgraded IP 'design_1_generateBoardMatrix_0_0', and cannot be set to '1'
+
+Parameter 'C_M_AXI_LANDINGHEIGHTARRAY_DATA_WIDTH' is no longer present on the upgraded IP 'design_1_generateBoardMatrix_0_0', and cannot be set to '32'
+
+Parameter 'C_M_AXI_LANDINGHEIGHTARRAY_ENABLE_USER_PORTS' is no longer present on the upgraded IP 'design_1_generateBoardMatrix_0_0', and cannot be set to 'false'
+
+Parameter 'C_M_AXI_LANDINGHEIGHTARRAY_AWUSER_WIDTH' is no longer present on the upgraded IP 'design_1_generateBoardMatrix_0_0', and cannot be set to '1'
+
+Parameter 'C_M_AXI_LANDINGHEIGHTARRAY_WUSER_WIDTH' is no longer present on the upgraded IP 'design_1_generateBoardMatrix_0_0', and cannot be set to '1'
+
+Parameter 'C_M_AXI_LANDINGHEIGHTARRAY_BUSER_WIDTH' is no longer present on the upgraded IP 'design_1_generateBoardMatrix_0_0', and cannot be set to '1'
+
+Parameter 'C_M_AXI_LANDINGHEIGHTARRAY_ARUSER_WIDTH' is no longer present on the upgraded IP 'design_1_generateBoardMatrix_0_0', and cannot be set to '1'
+
+Parameter 'C_M_AXI_LANDINGHEIGHTARRAY_RUSER_WIDTH' is no longer present on the upgraded IP 'design_1_generateBoardMatrix_0_0', and cannot be set to '1'
+
+Parameter 'C_M_AXI_LANDINGHEIGHTARRAY_USER_VALUE' is no longer present on the upgraded IP 'design_1_generateBoardMatrix_0_0', and cannot be set to '0x00000000'
+
+Parameter 'C_M_AXI_LANDINGHEIGHTARRAY_PROT_VALUE' is no longer present on the upgraded IP 'design_1_generateBoardMatrix_0_0', and cannot be set to '"000"'
+
+Parameter 'C_M_AXI_LANDINGHEIGHTARRAY_CACHE_VALUE' is no longer present on the upgraded IP 'design_1_generateBoardMatrix_0_0', and cannot be set to '"0011"'
+
+Parameter 'C_M_AXI_LANDINGHEIGHTARRAY_TARGET_ADDR' is no longer present on the upgraded IP 'design_1_generateBoardMatrix_0_0', and cannot be set to '0x00000000'
+
+Parameter 'C_M_AXI_PLACEMENTVALID_ENABLE_ID_PORTS' is no longer present on the upgraded IP 'design_1_generateBoardMatrix_0_0', and cannot be set to 'false'
+
+Parameter 'C_M_AXI_PLACEMENTVALID_ID_WIDTH' is no longer present on the upgraded IP 'design_1_generateBoardMatrix_0_0', and cannot be set to '1'
+
+Parameter 'C_M_AXI_PLACEMENTVALID_DATA_WIDTH' is no longer present on the upgraded IP 'design_1_generateBoardMatrix_0_0', and cannot be set to '32'
+
+Parameter 'C_M_AXI_PLACEMENTVALID_ENABLE_USER_PORTS' is no longer present on the upgraded IP 'design_1_generateBoardMatrix_0_0', and cannot be set to 'false'
+
+Parameter 'C_M_AXI_PLACEMENTVALID_AWUSER_WIDTH' is no longer present on the upgraded IP 'design_1_generateBoardMatrix_0_0', and cannot be set to '1'
+
+Parameter 'C_M_AXI_PLACEMENTVALID_WUSER_WIDTH' is no longer present on the upgraded IP 'design_1_generateBoardMatrix_0_0', and cannot be set to '1'
+
+Parameter 'C_M_AXI_PLACEMENTVALID_BUSER_WIDTH' is no longer present on the upgraded IP 'design_1_generateBoardMatrix_0_0', and cannot be set to '1'
+
+Parameter 'C_M_AXI_PLACEMENTVALID_ARUSER_WIDTH' is no longer present on the upgraded IP 'design_1_generateBoardMatrix_0_0', and cannot be set to '1'
+
+Parameter 'C_M_AXI_PLACEMENTVALID_RUSER_WIDTH' is no longer present on the upgraded IP 'design_1_generateBoardMatrix_0_0', and cannot be set to '1'
+
+Parameter 'C_M_AXI_PLACEMENTVALID_USER_VALUE' is no longer present on the upgraded IP 'design_1_generateBoardMatrix_0_0', and cannot be set to '0x00000000'
+
+Parameter 'C_M_AXI_PLACEMENTVALID_PROT_VALUE' is no longer present on the upgraded IP 'design_1_generateBoardMatrix_0_0', and cannot be set to '"000"'
+
+Parameter 'C_M_AXI_PLACEMENTVALID_CACHE_VALUE' is no longer present on the upgraded IP 'design_1_generateBoardMatrix_0_0', and cannot be set to '"0011"'
+
+Parameter 'C_M_AXI_PLACEMENTVALID_TARGET_ADDR' is no longer present on the upgraded IP 'design_1_generateBoardMatrix_0_0', and cannot be set to '0x00000000'
+
+
+5. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:TetrisPlacementCore:generateBoardMatrix:1.1 -user_name design_1_generateBoardMatrix_0_0
+set_property -dict "\
+  CONFIG.Component_Name {design_1_generateBoardMatrix_0_0} \
+  CONFIG.II {x} \
+  CONFIG.ap_clk.ASSOCIATED_BUSIF {s_axi_CTRL_BUS:m_axi_board:m_axi_boardArray:m_axi_landingHeightArray:m_axi_placementValid} \
+  CONFIG.ap_clk.ASSOCIATED_RESET {ap_rst_n} \
+  CONFIG.ap_clk.LAYERED_METADATA {xilinx.com:interface:datatypes:1.0 {CLK {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}}} \
+  CONFIG.ap_rst_n.LAYERED_METADATA {xilinx.com:interface:datatypes:1.0 {RST {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}}} \
+  CONFIG.ap_rst_n.POLARITY {ACTIVE_LOW} \
+  CONFIG.clk_period {10.000000} \
+  CONFIG.combinational {0} \
+  CONFIG.interrupt.LAYERED_METADATA {xilinx.com:interface:datatypes:1.0 {INTERRUPT {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}}} \
+  CONFIG.interrupt.SENSITIVITY {LEVEL_HIGH} \
+  CONFIG.latency {2} \
+  CONFIG.machine {64} \
+  CONFIG.s_axi_CTRL_BUS.ADDR_WIDTH {5} \
+  CONFIG.s_axi_CTRL_BUS.DATA_WIDTH {32} \
+  CONFIG.s_axi_CTRL_BUS.LAYERED_METADATA {xilinx.com:interface:datatypes:1.0 {CLK {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 1} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0}}}}} \
+  CONFIG.s_axi_CTRL_BUS.PROTOCOL {AXI4LITE} \
+  CONFIG.s_axi_CTRL_BUS.READ_WRITE_MODE {READ_WRITE} " [get_ips design_1_generateBoardMatrix_0_0]
+
+

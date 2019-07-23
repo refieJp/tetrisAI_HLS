@@ -1,0 +1,1136 @@
+
+
+================================================================
+== Vivado HLS Report for 'getRowScores'
+================================================================
+* Date:           Tue Jun 25 00:36:39 2019
+
+* Version:        2017.2 (Build 1909853 on Thu Jun 15 18:55:24 MDT 2017)
+* Project:        elTetris2HLSCore
+* Solution:       solution1
+* Product family: artix7
+* Target device:  xc7a100tcsg324-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      8.66|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |  111|  111|  111|  111|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+        |          |  Latency  | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name| min | max |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+        |- rowRow  |   60|   60|         3|          3|          5|    20|    yes   |
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 3, depth = 3
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 54
+* Pipeline: 1
+  Pipeline-0: II = 3, D = 3, States = { 2 3 4 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	5  / (exitcond1)
+	3  / (!exitcond1)
+3 --> 
+	4  / true
+4 --> 
+	2  / true
+5 --> 
+	6  / true
+6 --> 
+	7  / true
+7 --> 
+	8  / true
+8 --> 
+	9  / true
+9 --> 
+	10  / true
+10 --> 
+	11  / true
+11 --> 
+	12  / true
+12 --> 
+	13  / true
+13 --> 
+	14  / true
+14 --> 
+	15  / true
+15 --> 
+	16  / true
+16 --> 
+	17  / true
+17 --> 
+	18  / true
+18 --> 
+	19  / true
+19 --> 
+	20  / true
+20 --> 
+	21  / true
+21 --> 
+	22  / true
+22 --> 
+	23  / true
+23 --> 
+	24  / true
+24 --> 
+	25  / true
+25 --> 
+	26  / true
+26 --> 
+	27  / true
+27 --> 
+	28  / true
+28 --> 
+	29  / true
+29 --> 
+	30  / true
+30 --> 
+	31  / true
+31 --> 
+	32  / true
+32 --> 
+	33  / true
+33 --> 
+	34  / true
+34 --> 
+	35  / true
+35 --> 
+	36  / true
+36 --> 
+	37  / true
+37 --> 
+	38  / true
+38 --> 
+	39  / true
+39 --> 
+	40  / true
+40 --> 
+	41  / true
+41 --> 
+	42  / true
+42 --> 
+	43  / true
+43 --> 
+	44  / true
+44 --> 
+	45  / true
+45 --> 
+	46  / true
+46 --> 
+	47  / true
+47 --> 
+	48  / true
+48 --> 
+	49  / true
+49 --> 
+	50  / true
+50 --> 
+	51  / true
+51 --> 
+	52  / true
+52 --> 
+	53  / true
+53 --> 
+	54  / true
+54 --> 
+* FSM state operations: 
+
+ <State 1>: 2.35ns
+ST_1: batch31_read (14)  [1/1] 0.00ns
+:0  %batch31_read = call i6 @_ssdm_op_Read.ap_auto.i6(i6 %batch31)
+
+ST_1: batch3_read (15)  [1/1] 0.00ns
+:1  %batch3_read = call i6 @_ssdm_op_Read.ap_auto.i6(i6 %batch3)
+
+ST_1: tmp_8 (16)  [1/1] 0.00ns
+:2  %tmp_8 = call i10 @_ssdm_op_BitConcatenate.i10.i6.i4(i6 %batch31_read, i4 0)
+
+ST_1: p_shl2_cast (17)  [1/1] 0.00ns
+:3  %p_shl2_cast = zext i10 %tmp_8 to i11
+
+ST_1: tmp_9 (18)  [1/1] 0.00ns
+:4  %tmp_9 = call i8 @_ssdm_op_BitConcatenate.i8.i6.i2(i6 %batch31_read, i2 0)
+
+ST_1: p_shl3_cast (19)  [1/1] 0.00ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:34
+:5  %p_shl3_cast = zext i8 %tmp_9 to i11
+
+ST_1: tmp_10 (20)  [1/1] 2.35ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:34
+:6  %tmp_10 = add i11 %p_shl3_cast, %p_shl2_cast
+
+ST_1: tmp_11 (21)  [1/1] 0.00ns
+:7  %tmp_11 = call i10 @_ssdm_op_BitConcatenate.i10.i6.i4(i6 %batch3_read, i4 0)
+
+ST_1: p_shl_cast (22)  [1/1] 0.00ns
+:8  %p_shl_cast = zext i10 %tmp_11 to i11
+
+ST_1: tmp_12 (23)  [1/1] 0.00ns
+:9  %tmp_12 = call i8 @_ssdm_op_BitConcatenate.i8.i6.i2(i6 %batch3_read, i2 0)
+
+ST_1: p_shl1_cast (24)  [1/1] 0.00ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:29
+:10  %p_shl1_cast = zext i8 %tmp_12 to i11
+
+ST_1: tmp_13 (25)  [1/1] 2.35ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:29
+:11  %tmp_13 = add i11 %p_shl1_cast, %p_shl_cast
+
+ST_1: StgValue_67 (26)  [1/1] 1.61ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:16
+:12  br label %1
+
+
+ <State 2>: 4.91ns
+ST_2: row (28)  [1/1] 0.00ns
+:0  %row = phi i5 [ 0, %0 ], [ %row_1, %._crit_edge.0 ]
+
+ST_2: elimCounter (29)  [1/1] 0.00ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:35
+:1  %elimCounter = phi i8 [ 0, %0 ], [ %elimCounter_2_s, %._crit_edge.0 ]
+
+ST_2: rowTranCounter (30)  [1/1] 0.00ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:32
+:2  %rowTranCounter = phi i8 [ 0, %0 ], [ %rowTranCounter_2_s, %._crit_edge.0 ]
+
+ST_2: exitcond1 (31)  [1/1] 3.13ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:16
+:3  %exitcond1 = icmp eq i5 %row, -12
+
+ST_2: row_1 (32)  [1/1] 2.34ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:16
+:4  %row_1 = add i5 %row, 1
+
+ST_2: StgValue_73 (33)  [1/1] 0.00ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:16
+:5  br i1 %exitcond1, label %2, label %._crit_edge.0
+
+ST_2: row_cast_cast (35)  [1/1] 0.00ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:29
+._crit_edge.0:0  %row_cast_cast = zext i5 %row to i11
+
+ST_2: tmp_14 (36)  [1/1] 2.35ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:29
+._crit_edge.0:1  %tmp_14 = add i11 %tmp_13, %row_cast_cast
+
+ST_2: tmp_14_cast (37)  [1/1] 0.00ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:29
+._crit_edge.0:2  %tmp_14_cast = zext i11 %tmp_14 to i32
+
+ST_2: board_0_addr (38)  [1/1] 0.00ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:29
+._crit_edge.0:3  %board_0_addr = getelementptr [800 x i1]* %board_0, i32 0, i32 %tmp_14_cast
+
+ST_2: board_1_addr (39)  [1/1] 0.00ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:29
+._crit_edge.0:4  %board_1_addr = getelementptr [800 x i1]* %board_1, i32 0, i32 %tmp_14_cast
+
+ST_2: board_2_addr (40)  [1/1] 0.00ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:29
+._crit_edge.0:5  %board_2_addr = getelementptr [800 x i1]* %board_2, i32 0, i32 %tmp_14_cast
+
+ST_2: board_3_addr (41)  [1/1] 0.00ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:29
+._crit_edge.0:6  %board_3_addr = getelementptr [800 x i1]* %board_3, i32 0, i32 %tmp_14_cast
+
+ST_2: board_4_addr (42)  [1/1] 0.00ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:29
+._crit_edge.0:7  %board_4_addr = getelementptr [800 x i1]* %board_4, i32 0, i32 %tmp_14_cast
+
+ST_2: board_5_addr (43)  [1/1] 0.00ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:29
+._crit_edge.0:8  %board_5_addr = getelementptr [800 x i1]* %board_5, i32 0, i32 %tmp_14_cast
+
+ST_2: board_6_addr (44)  [1/1] 0.00ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:29
+._crit_edge.0:9  %board_6_addr = getelementptr [800 x i1]* %board_6, i32 0, i32 %tmp_14_cast
+
+ST_2: board_7_addr (45)  [1/1] 0.00ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:29
+._crit_edge.0:10  %board_7_addr = getelementptr [800 x i1]* %board_7, i32 0, i32 %tmp_14_cast
+
+ST_2: board_8_addr (46)  [1/1] 0.00ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:29
+._crit_edge.0:11  %board_8_addr = getelementptr [800 x i1]* %board_8, i32 0, i32 %tmp_14_cast
+
+ST_2: board_9_addr (47)  [1/1] 0.00ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:29
+._crit_edge.0:12  %board_9_addr = getelementptr [800 x i1]* %board_9, i32 0, i32 %tmp_14_cast
+
+ST_2: tmp_15 (48)  [1/1] 2.35ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:34
+._crit_edge.0:13  %tmp_15 = add i11 %tmp_10, %row_cast_cast
+
+ST_2: tmp_15_cast (49)  [1/1] 0.00ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:34
+._crit_edge.0:14  %tmp_15_cast = zext i11 %tmp_15 to i32
+
+ST_2: rowEliminated_addr (50)  [1/1] 0.00ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:34
+._crit_edge.0:15  %rowEliminated_addr = getelementptr [800 x i1]* %rowEliminated, i32 0, i32 %tmp_15_cast
+
+ST_2: board_0_load (55)  [2/2] 2.57ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:29
+._crit_edge.0:20  %board_0_load = load i1* %board_0_addr, align 1
+
+ST_2: rowEliminated_load (58)  [2/2] 2.57ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:34
+._crit_edge.0:23  %rowEliminated_load = load i1* %rowEliminated_addr, align 1
+
+ST_2: board_1_load (59)  [2/2] 2.57ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:29
+._crit_edge.0:24  %board_1_load = load i1* %board_1_addr, align 1
+
+ST_2: board_2_load (62)  [2/2] 2.57ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:29
+._crit_edge.0:27  %board_2_load = load i1* %board_2_addr, align 1
+
+ST_2: board_3_load (65)  [2/2] 2.57ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:29
+._crit_edge.0:30  %board_3_load = load i1* %board_3_addr, align 1
+
+ST_2: board_4_load (68)  [2/2] 2.57ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:29
+._crit_edge.0:33  %board_4_load = load i1* %board_4_addr, align 1
+
+ST_2: board_5_load (71)  [2/2] 2.57ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:29
+._crit_edge.0:36  %board_5_load = load i1* %board_5_addr, align 1
+
+ST_2: board_6_load (74)  [2/2] 2.57ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:29
+._crit_edge.0:39  %board_6_load = load i1* %board_6_addr, align 1
+
+ST_2: board_7_load (77)  [2/2] 2.57ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:29
+._crit_edge.0:42  %board_7_load = load i1* %board_7_addr, align 1
+
+ST_2: board_8_load (80)  [2/2] 2.57ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:29
+._crit_edge.0:45  %board_8_load = load i1* %board_8_addr, align 1
+
+ST_2: board_9_load (83)  [2/2] 2.57ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:29
+._crit_edge.0:48  %board_9_load = load i1* %board_9_addr, align 1
+
+
+ <State 3>: 6.71ns
+ST_3: board_0_load (55)  [1/2] 2.57ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:29
+._crit_edge.0:20  %board_0_load = load i1* %board_0_addr, align 1
+
+ST_3: tmp_s (56)  [1/1] 0.00ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:31 (grouped into LUT with out node tmp2)
+._crit_edge.0:21  %tmp_s = xor i1 %board_0_load, true
+
+ST_3: rowTran_cast (57)  [1/1] 0.00ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:34 (grouped into LUT with out node tmp2)
+._crit_edge.0:22  %rowTran_cast = zext i1 %tmp_s to i2
+
+ST_3: rowEliminated_load (58)  [1/2] 2.57ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:34
+._crit_edge.0:23  %rowEliminated_load = load i1* %rowEliminated_addr, align 1
+
+ST_3: board_1_load (59)  [1/2] 2.57ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:29
+._crit_edge.0:24  %board_1_load = load i1* %board_1_addr, align 1
+
+ST_3: tmp_6_1 (60)  [1/1] 0.00ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:31 (grouped into LUT with out node tmp2)
+._crit_edge.0:25  %tmp_6_1 = xor i1 %board_0_load, %board_1_load
+
+ST_3: rowTran_1_cast (61)  [1/1] 0.00ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:29 (grouped into LUT with out node tmp2)
+._crit_edge.0:26  %rowTran_1_cast = zext i1 %tmp_6_1 to i2
+
+ST_3: board_2_load (62)  [1/2] 2.57ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:29
+._crit_edge.0:27  %board_2_load = load i1* %board_2_addr, align 1
+
+ST_3: tmp_6_2 (63)  [1/1] 2.07ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:31
+._crit_edge.0:28  %tmp_6_2 = xor i1 %board_1_load, %board_2_load
+
+ST_3: rowTran_2_cast (64)  [1/1] 0.00ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:29
+._crit_edge.0:29  %rowTran_2_cast = zext i1 %tmp_6_2 to i2
+
+ST_3: board_3_load (65)  [1/2] 2.57ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:29
+._crit_edge.0:30  %board_3_load = load i1* %board_3_addr, align 1
+
+ST_3: tmp_6_3 (66)  [1/1] 2.07ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:31
+._crit_edge.0:31  %tmp_6_3 = xor i1 %board_2_load, %board_3_load
+
+ST_3: rowTran_3_cast (67)  [1/1] 0.00ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:29
+._crit_edge.0:32  %rowTran_3_cast = zext i1 %tmp_6_3 to i2
+
+ST_3: board_4_load (68)  [1/2] 2.57ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:29
+._crit_edge.0:33  %board_4_load = load i1* %board_4_addr, align 1
+
+ST_3: tmp_6_4 (69)  [1/1] 2.07ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:31
+._crit_edge.0:34  %tmp_6_4 = xor i1 %board_3_load, %board_4_load
+
+ST_3: rowTran_4_cast (70)  [1/1] 0.00ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:29
+._crit_edge.0:35  %rowTran_4_cast = zext i1 %tmp_6_4 to i2
+
+ST_3: board_5_load (71)  [1/2] 2.57ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:29
+._crit_edge.0:36  %board_5_load = load i1* %board_5_addr, align 1
+
+ST_3: tmp_6_5 (72)  [1/1] 2.07ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:31
+._crit_edge.0:37  %tmp_6_5 = xor i1 %board_4_load, %board_5_load
+
+ST_3: rowTran_5_cast (73)  [1/1] 0.00ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:29
+._crit_edge.0:38  %rowTran_5_cast = zext i1 %tmp_6_5 to i2
+
+ST_3: board_6_load (74)  [1/2] 2.57ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:29
+._crit_edge.0:39  %board_6_load = load i1* %board_6_addr, align 1
+
+ST_3: tmp_6_6 (75)  [1/1] 2.07ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:31
+._crit_edge.0:40  %tmp_6_6 = xor i1 %board_5_load, %board_6_load
+
+ST_3: rowTran_6_cast (76)  [1/1] 0.00ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:29
+._crit_edge.0:41  %rowTran_6_cast = zext i1 %tmp_6_6 to i2
+
+ST_3: board_7_load (77)  [1/2] 2.57ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:29
+._crit_edge.0:42  %board_7_load = load i1* %board_7_addr, align 1
+
+ST_3: tmp_6_7 (78)  [1/1] 2.07ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:31
+._crit_edge.0:43  %tmp_6_7 = xor i1 %board_6_load, %board_7_load
+
+ST_3: rowTran_7_cast (79)  [1/1] 0.00ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:29
+._crit_edge.0:44  %rowTran_7_cast = zext i1 %tmp_6_7 to i2
+
+ST_3: board_8_load (80)  [1/2] 2.57ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:29
+._crit_edge.0:45  %board_8_load = load i1* %board_8_addr, align 1
+
+ST_3: tmp_6_8 (81)  [1/1] 2.07ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:31
+._crit_edge.0:46  %tmp_6_8 = xor i1 %board_7_load, %board_8_load
+
+ST_3: rowTran_8_cast (82)  [1/1] 0.00ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:29
+._crit_edge.0:47  %rowTran_8_cast = zext i1 %tmp_6_8 to i2
+
+ST_3: board_9_load (83)  [1/2] 2.57ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:29
+._crit_edge.0:48  %board_9_load = load i1* %board_9_addr, align 1
+
+ST_3: tmp_6_9 (84)  [1/1] 2.07ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:31
+._crit_edge.0:49  %tmp_6_9 = xor i1 %board_8_load, %board_9_load
+
+ST_3: rowTran_9_cast (85)  [1/1] 0.00ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:31
+._crit_edge.0:50  %rowTran_9_cast = zext i1 %tmp_6_9 to i2
+
+ST_3: tmp_6_s (86)  [1/1] 2.07ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:31
+._crit_edge.0:51  %tmp_6_s = xor i1 %board_9_load, true
+
+ST_3: rowTran_cast_3 (87)  [1/1] 0.00ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:32
+._crit_edge.0:52  %rowTran_cast_3 = zext i1 %tmp_6_s to i2
+
+ST_3: tmp2 (88)  [1/1] 2.20ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:32 (out node of the LUT)
+._crit_edge.0:53  %tmp2 = add i2 %rowTran_1_cast, %rowTran_cast
+
+ST_3: tmp4 (90)  [1/1] 1.03ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:32
+._crit_edge.0:55  %tmp4 = add i2 %rowTran_4_cast, %rowTran_3_cast
+
+ST_3: tmp3 (91)  [1/1] 1.03ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:32
+._crit_edge.0:56  %tmp3 = add i2 %rowTran_2_cast, %tmp4
+
+ST_3: tmp7 (95)  [1/1] 1.03ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:32
+._crit_edge.0:60  %tmp7 = add i2 %rowTran_7_cast, %rowTran_6_cast
+
+ST_3: tmp6 (96)  [1/1] 1.03ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:32
+._crit_edge.0:61  %tmp6 = add i2 %rowTran_5_cast, %tmp7
+
+ST_3: tmp9 (98)  [1/1] 1.03ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:32
+._crit_edge.0:63  %tmp9 = add i2 %rowTran_cast_3, %rowTran_9_cast
+
+ST_3: tmp8 (99)  [1/1] 1.03ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:32
+._crit_edge.0:64  %tmp8 = add i2 %rowTran_8_cast, %tmp9
+
+
+ <State 4>: 6.81ns
+ST_4: empty (51)  [1/1] 0.00ns
+._crit_edge.0:16  %empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 20, i64 20, i64 20)
+
+ST_4: StgValue_142 (52)  [1/1] 0.00ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:17
+._crit_edge.0:17  call void (...)* @_ssdm_op_SpecLoopName([7 x i8]* @p_str1) nounwind
+
+ST_4: tmp_6 (53)  [1/1] 0.00ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:17
+._crit_edge.0:18  %tmp_6 = call i32 (...)* @_ssdm_op_SpecRegionBegin([7 x i8]* @p_str1) nounwind
+
+ST_4: StgValue_144 (54)  [1/1] 0.00ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:24
+._crit_edge.0:19  call void (...)* @_ssdm_op_SpecPipeline(i32 5, i32 1, i32 1, i32 0, [1 x i8]* @p_str) nounwind
+
+ST_4: tmp2_cast (89)  [1/1] 0.00ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:32
+._crit_edge.0:54  %tmp2_cast = zext i2 %tmp2 to i3
+
+ST_4: tmp3_cast (92)  [1/1] 0.00ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:32
+._crit_edge.0:57  %tmp3_cast = zext i2 %tmp3 to i3
+
+ST_4: tmp1 (93)  [1/1] 2.20ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:32
+._crit_edge.0:58  %tmp1 = add i3 %tmp2_cast, %tmp3_cast
+
+ST_4: tmp1_cast (94)  [1/1] 0.00ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:32
+._crit_edge.0:59  %tmp1_cast = zext i3 %tmp1 to i4
+
+ST_4: tmp6_cast (97)  [1/1] 0.00ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:32
+._crit_edge.0:62  %tmp6_cast = zext i2 %tmp6 to i3
+
+ST_4: tmp8_cast (100)  [1/1] 0.00ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:32
+._crit_edge.0:65  %tmp8_cast = zext i2 %tmp8 to i3
+
+ST_4: tmp5 (101)  [1/1] 2.20ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:32
+._crit_edge.0:66  %tmp5 = add i3 %tmp6_cast, %tmp8_cast
+
+ST_4: tmp5_cast (102)  [1/1] 0.00ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:32
+._crit_edge.0:67  %tmp5_cast = zext i3 %tmp5 to i4
+
+ST_4: tmp_7 (103)  [1/1] 2.27ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:32
+._crit_edge.0:68  %tmp_7 = add i4 %tmp1_cast, %tmp5_cast
+
+ST_4: p_cast1 (104)  [1/1] 0.00ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:32
+._crit_edge.0:69  %p_cast1 = zext i4 %tmp_7 to i8
+
+ST_4: rowTranCounter_2_s (105)  [1/1] 2.34ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:32
+._crit_edge.0:70  %rowTranCounter_2_s = add i8 %p_cast1, %rowTranCounter
+
+ST_4: tmp11 (106)  [1/1] 0.00ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:35
+._crit_edge.0:71  %tmp11 = call i2 @_ssdm_op_BitConcatenate.i2.i1.i1(i1 %rowEliminated_load, i1 false)
+
+ST_4: tmp11_cast (107)  [1/1] 0.00ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:35
+._crit_edge.0:72  %tmp11_cast = zext i2 %tmp11 to i3
+
+ST_4: tmp12 (108)  [1/1] 0.00ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:35
+._crit_edge.0:73  %tmp12 = call i2 @_ssdm_op_BitConcatenate.i2.i1.i1(i1 %rowEliminated_load, i1 %rowEliminated_load)
+
+ST_4: tmp12_cast (109)  [1/1] 0.00ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:35
+._crit_edge.0:74  %tmp12_cast = zext i2 %tmp12 to i3
+
+ST_4: tmp10 (110)  [1/1] 2.20ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:35
+._crit_edge.0:75  %tmp10 = add i3 %tmp11_cast, %tmp12_cast
+
+ST_4: tmp10_cast (111)  [1/1] 0.00ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:35
+._crit_edge.0:76  %tmp10_cast = zext i3 %tmp10 to i4
+
+ST_4: tmp13 (112)  [1/1] 0.00ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:35
+._crit_edge.0:77  %tmp13 = call i3 @_ssdm_op_BitConcatenate.i3.i1.i1.i1(i1 %rowEliminated_load, i1 %rowEliminated_load, i1 false)
+
+ST_4: tmp14_cast (113)  [1/1] 0.00ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:35
+._crit_edge.0:78  %tmp14_cast = zext i3 %tmp13 to i4
+
+ST_4: tmp_16 (114)  [1/1] 2.27ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:35
+._crit_edge.0:79  %tmp_16 = add i4 %tmp10_cast, %tmp14_cast
+
+ST_4: p_cast (115)  [1/1] 0.00ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:35
+._crit_edge.0:80  %p_cast = zext i4 %tmp_16 to i8
+
+ST_4: elimCounter_2_s (116)  [1/1] 2.34ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:35
+._crit_edge.0:81  %elimCounter_2_s = add i8 %p_cast, %elimCounter
+
+ST_4: empty_4 (117)  [1/1] 0.00ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:37
+._crit_edge.0:82  %empty_4 = call i32 (...)* @_ssdm_op_SpecRegionEnd([7 x i8]* @p_str1, i32 %tmp_6) nounwind
+
+ST_4: StgValue_168 (118)  [1/1] 0.00ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:16
+._crit_edge.0:83  br label %1
+
+
+ <State 5>: 6.02ns
+ST_5: elimCounter_cast (120)  [1/1] 0.00ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:16
+:0  %elimCounter_cast = zext i8 %elimCounter to i32
+
+ST_5: tmp_2 (124)  [6/6] 6.02ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39
+:4  %tmp_2 = sitofp i32 %elimCounter_cast to double
+
+
+ <State 6>: 6.02ns
+ST_6: rowTranCounter_cast (121)  [1/1] 0.00ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:16
+:1  %rowTranCounter_cast = zext i8 %rowTranCounter to i32
+
+ST_6: tmp (122)  [6/6] 6.02ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39
+:2  %tmp = sitofp i32 %rowTranCounter_cast to double
+
+ST_6: tmp_2 (124)  [5/6] 6.02ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39
+:4  %tmp_2 = sitofp i32 %elimCounter_cast to double
+
+
+ <State 7>: 6.02ns
+ST_7: tmp (122)  [5/6] 6.02ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39
+:2  %tmp = sitofp i32 %rowTranCounter_cast to double
+
+ST_7: tmp_2 (124)  [4/6] 6.02ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39
+:4  %tmp_2 = sitofp i32 %elimCounter_cast to double
+
+
+ <State 8>: 6.02ns
+ST_8: tmp (122)  [4/6] 6.02ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39
+:2  %tmp = sitofp i32 %rowTranCounter_cast to double
+
+ST_8: tmp_2 (124)  [3/6] 6.02ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39
+:4  %tmp_2 = sitofp i32 %elimCounter_cast to double
+
+
+ <State 9>: 6.02ns
+ST_9: tmp (122)  [3/6] 6.02ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39
+:2  %tmp = sitofp i32 %rowTranCounter_cast to double
+
+ST_9: tmp_2 (124)  [2/6] 6.02ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39
+:4  %tmp_2 = sitofp i32 %elimCounter_cast to double
+
+
+ <State 10>: 6.02ns
+ST_10: tmp (122)  [2/6] 6.02ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39
+:2  %tmp = sitofp i32 %rowTranCounter_cast to double
+
+ST_10: tmp_2 (124)  [1/6] 6.02ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39
+:4  %tmp_2 = sitofp i32 %elimCounter_cast to double
+
+
+ <State 11>: 7.79ns
+ST_11: tmp (122)  [1/6] 6.02ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39
+:2  %tmp = sitofp i32 %rowTranCounter_cast to double
+
+ST_11: tmp_3 (125)  [6/6] 7.79ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39
+:5  %tmp_3 = fmul double %tmp_2, 0x400B8148A1086447
+
+
+ <State 12>: 7.79ns
+ST_12: tmp_3 (125)  [5/6] 7.79ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39
+:5  %tmp_3 = fmul double %tmp_2, 0x400B8148A1086447
+
+
+ <State 13>: 7.79ns
+ST_13: tmp_3 (125)  [4/6] 7.79ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39
+:5  %tmp_3 = fmul double %tmp_2, 0x400B8148A1086447
+
+
+ <State 14>: 7.79ns
+ST_14: tmp_3 (125)  [3/6] 7.79ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39
+:5  %tmp_3 = fmul double %tmp_2, 0x400B8148A1086447
+
+
+ <State 15>: 7.79ns
+ST_15: tmp_3 (125)  [2/6] 7.79ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39
+:5  %tmp_3 = fmul double %tmp_2, 0x400B8148A1086447
+
+
+ <State 16>: 7.79ns
+ST_16: tmp_3 (125)  [1/6] 7.79ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39
+:5  %tmp_3 = fmul double %tmp_2, 0x400B8148A1086447
+
+
+ <State 17>: 8.66ns
+ST_17: tmp_4 (126)  [31/31] 8.66ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39
+:6  %tmp_4 = fdiv double %tmp_3, 1.000000e+01
+
+
+ <State 18>: 8.66ns
+ST_18: tmp_4 (126)  [30/31] 8.66ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39
+:6  %tmp_4 = fdiv double %tmp_3, 1.000000e+01
+
+
+ <State 19>: 8.66ns
+ST_19: tmp_4 (126)  [29/31] 8.66ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39
+:6  %tmp_4 = fdiv double %tmp_3, 1.000000e+01
+
+
+ <State 20>: 8.66ns
+ST_20: tmp_4 (126)  [28/31] 8.66ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39
+:6  %tmp_4 = fdiv double %tmp_3, 1.000000e+01
+
+
+ <State 21>: 8.66ns
+ST_21: tmp_4 (126)  [27/31] 8.66ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39
+:6  %tmp_4 = fdiv double %tmp_3, 1.000000e+01
+
+
+ <State 22>: 8.66ns
+ST_22: tmp_4 (126)  [26/31] 8.66ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39
+:6  %tmp_4 = fdiv double %tmp_3, 1.000000e+01
+
+
+ <State 23>: 8.66ns
+ST_23: tmp_4 (126)  [25/31] 8.66ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39
+:6  %tmp_4 = fdiv double %tmp_3, 1.000000e+01
+
+
+ <State 24>: 8.66ns
+ST_24: tmp_4 (126)  [24/31] 8.66ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39
+:6  %tmp_4 = fdiv double %tmp_3, 1.000000e+01
+
+
+ <State 25>: 8.66ns
+ST_25: tmp_4 (126)  [23/31] 8.66ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39
+:6  %tmp_4 = fdiv double %tmp_3, 1.000000e+01
+
+
+ <State 26>: 8.66ns
+ST_26: tmp_4 (126)  [22/31] 8.66ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39
+:6  %tmp_4 = fdiv double %tmp_3, 1.000000e+01
+
+
+ <State 27>: 8.66ns
+ST_27: tmp_4 (126)  [21/31] 8.66ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39
+:6  %tmp_4 = fdiv double %tmp_3, 1.000000e+01
+
+
+ <State 28>: 8.66ns
+ST_28: tmp_4 (126)  [20/31] 8.66ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39
+:6  %tmp_4 = fdiv double %tmp_3, 1.000000e+01
+
+
+ <State 29>: 8.66ns
+ST_29: tmp_4 (126)  [19/31] 8.66ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39
+:6  %tmp_4 = fdiv double %tmp_3, 1.000000e+01
+
+
+ <State 30>: 8.66ns
+ST_30: tmp_4 (126)  [18/31] 8.66ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39
+:6  %tmp_4 = fdiv double %tmp_3, 1.000000e+01
+
+
+ <State 31>: 8.66ns
+ST_31: tmp_4 (126)  [17/31] 8.66ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39
+:6  %tmp_4 = fdiv double %tmp_3, 1.000000e+01
+
+
+ <State 32>: 8.66ns
+ST_32: tmp_4 (126)  [16/31] 8.66ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39
+:6  %tmp_4 = fdiv double %tmp_3, 1.000000e+01
+
+
+ <State 33>: 8.66ns
+ST_33: tmp_4 (126)  [15/31] 8.66ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39
+:6  %tmp_4 = fdiv double %tmp_3, 1.000000e+01
+
+
+ <State 34>: 8.66ns
+ST_34: tmp_4 (126)  [14/31] 8.66ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39
+:6  %tmp_4 = fdiv double %tmp_3, 1.000000e+01
+
+
+ <State 35>: 8.66ns
+ST_35: tmp_4 (126)  [13/31] 8.66ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39
+:6  %tmp_4 = fdiv double %tmp_3, 1.000000e+01
+
+
+ <State 36>: 8.66ns
+ST_36: tmp_4 (126)  [12/31] 8.66ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39
+:6  %tmp_4 = fdiv double %tmp_3, 1.000000e+01
+
+
+ <State 37>: 8.66ns
+ST_37: tmp_4 (126)  [11/31] 8.66ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39
+:6  %tmp_4 = fdiv double %tmp_3, 1.000000e+01
+
+
+ <State 38>: 8.66ns
+ST_38: tmp_4 (126)  [10/31] 8.66ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39
+:6  %tmp_4 = fdiv double %tmp_3, 1.000000e+01
+
+
+ <State 39>: 8.66ns
+ST_39: tmp_4 (126)  [9/31] 8.66ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39
+:6  %tmp_4 = fdiv double %tmp_3, 1.000000e+01
+
+
+ <State 40>: 8.66ns
+ST_40: tmp_4 (126)  [8/31] 8.66ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39
+:6  %tmp_4 = fdiv double %tmp_3, 1.000000e+01
+
+
+ <State 41>: 8.66ns
+ST_41: tmp_4 (126)  [7/31] 8.66ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39
+:6  %tmp_4 = fdiv double %tmp_3, 1.000000e+01
+
+
+ <State 42>: 8.66ns
+ST_42: tmp_1 (123)  [6/6] 7.79ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39
+:3  %tmp_1 = fmul double %tmp, 0xC009BE3C36D1935E
+
+ST_42: tmp_4 (126)  [6/31] 8.66ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39
+:6  %tmp_4 = fdiv double %tmp_3, 1.000000e+01
+
+
+ <State 43>: 8.66ns
+ST_43: tmp_1 (123)  [5/6] 7.79ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39
+:3  %tmp_1 = fmul double %tmp, 0xC009BE3C36D1935E
+
+ST_43: tmp_4 (126)  [5/31] 8.66ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39
+:6  %tmp_4 = fdiv double %tmp_3, 1.000000e+01
+
+
+ <State 44>: 8.66ns
+ST_44: tmp_1 (123)  [4/6] 7.79ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39
+:3  %tmp_1 = fmul double %tmp, 0xC009BE3C36D1935E
+
+ST_44: tmp_4 (126)  [4/31] 8.66ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39
+:6  %tmp_4 = fdiv double %tmp_3, 1.000000e+01
+
+
+ <State 45>: 8.66ns
+ST_45: tmp_1 (123)  [3/6] 7.79ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39
+:3  %tmp_1 = fmul double %tmp, 0xC009BE3C36D1935E
+
+ST_45: tmp_4 (126)  [3/31] 8.66ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39
+:6  %tmp_4 = fdiv double %tmp_3, 1.000000e+01
+
+
+ <State 46>: 8.66ns
+ST_46: tmp_1 (123)  [2/6] 7.79ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39
+:3  %tmp_1 = fmul double %tmp, 0xC009BE3C36D1935E
+
+ST_46: tmp_4 (126)  [2/31] 8.66ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39
+:6  %tmp_4 = fdiv double %tmp_3, 1.000000e+01
+
+
+ <State 47>: 8.66ns
+ST_47: tmp_1 (123)  [1/6] 7.79ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39
+:3  %tmp_1 = fmul double %tmp, 0xC009BE3C36D1935E
+
+ST_47: tmp_4 (126)  [1/31] 8.66ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39
+:6  %tmp_4 = fdiv double %tmp_3, 1.000000e+01
+
+
+ <State 48>: 8.39ns
+ST_48: tmp_5 (127)  [6/6] 8.39ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39
+:7  %tmp_5 = fadd double %tmp_1, %tmp_4
+
+
+ <State 49>: 8.39ns
+ST_49: tmp_5 (127)  [5/6] 8.39ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39
+:7  %tmp_5 = fadd double %tmp_1, %tmp_4
+
+
+ <State 50>: 8.39ns
+ST_50: tmp_5 (127)  [4/6] 8.39ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39
+:7  %tmp_5 = fadd double %tmp_1, %tmp_4
+
+
+ <State 51>: 8.39ns
+ST_51: tmp_5 (127)  [3/6] 8.39ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39
+:7  %tmp_5 = fadd double %tmp_1, %tmp_4
+
+
+ <State 52>: 8.39ns
+ST_52: tmp_5 (127)  [2/6] 8.39ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39
+:7  %tmp_5 = fadd double %tmp_1, %tmp_4
+
+
+ <State 53>: 8.39ns
+ST_53: tmp_5 (127)  [1/6] 8.39ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39
+:7  %tmp_5 = fadd double %tmp_1, %tmp_4
+
+
+ <State 54>: 6.46ns
+ST_54: score (128)  [1/1] 6.46ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39
+:8  %score = fptrunc double %tmp_5 to float
+
+ST_54: StgValue_233 (129)  [1/1] 0.00ns  loc: C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:42
+:9  ret float %score
+
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 2.35ns
+The critical path consists of the following:
+	wire read on port 'batch31' [14]  (0 ns)
+	'add' operation ('tmp_10', C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:34) [20]  (2.35 ns)
+
+ <State 2>: 4.91ns
+The critical path consists of the following:
+	'phi' operation ('row') with incoming values : ('row', C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:16) [28]  (0 ns)
+	'add' operation ('tmp_14', C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:29) [36]  (2.35 ns)
+	'getelementptr' operation ('board_4_addr', C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:29) [42]  (0 ns)
+	'load' operation ('board_4_load', C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:29) on array 'board_4' [68]  (2.57 ns)
+
+ <State 3>: 6.71ns
+The critical path consists of the following:
+	'load' operation ('board_2_load', C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:29) on array 'board_2' [62]  (2.57 ns)
+	'xor' operation ('tmp_6_3', C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:31) [66]  (2.07 ns)
+	'add' operation ('tmp4', C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:32) [90]  (1.03 ns)
+	'add' operation ('tmp3', C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:32) [91]  (1.03 ns)
+
+ <State 4>: 6.81ns
+The critical path consists of the following:
+	'add' operation ('tmp1', C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:32) [93]  (2.2 ns)
+	'add' operation ('tmp_7', C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:32) [103]  (2.27 ns)
+	'add' operation ('rowTranCounter_2_s', C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:32) [105]  (2.34 ns)
+
+ <State 5>: 6.02ns
+The critical path consists of the following:
+	'sitodp' operation ('tmp_2', C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39) [124]  (6.02 ns)
+
+ <State 6>: 6.02ns
+The critical path consists of the following:
+	'sitodp' operation ('tmp', C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39) [122]  (6.02 ns)
+
+ <State 7>: 6.02ns
+The critical path consists of the following:
+	'sitodp' operation ('tmp', C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39) [122]  (6.02 ns)
+
+ <State 8>: 6.02ns
+The critical path consists of the following:
+	'sitodp' operation ('tmp', C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39) [122]  (6.02 ns)
+
+ <State 9>: 6.02ns
+The critical path consists of the following:
+	'sitodp' operation ('tmp', C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39) [122]  (6.02 ns)
+
+ <State 10>: 6.02ns
+The critical path consists of the following:
+	'sitodp' operation ('tmp', C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39) [122]  (6.02 ns)
+
+ <State 11>: 7.79ns
+The critical path consists of the following:
+	'dmul' operation ('tmp_3', C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39) [125]  (7.79 ns)
+
+ <State 12>: 7.79ns
+The critical path consists of the following:
+	'dmul' operation ('tmp_3', C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39) [125]  (7.79 ns)
+
+ <State 13>: 7.79ns
+The critical path consists of the following:
+	'dmul' operation ('tmp_3', C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39) [125]  (7.79 ns)
+
+ <State 14>: 7.79ns
+The critical path consists of the following:
+	'dmul' operation ('tmp_3', C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39) [125]  (7.79 ns)
+
+ <State 15>: 7.79ns
+The critical path consists of the following:
+	'dmul' operation ('tmp_3', C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39) [125]  (7.79 ns)
+
+ <State 16>: 7.79ns
+The critical path consists of the following:
+	'dmul' operation ('tmp_3', C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39) [125]  (7.79 ns)
+
+ <State 17>: 8.66ns
+The critical path consists of the following:
+	'ddiv' operation ('tmp_4', C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39) [126]  (8.66 ns)
+
+ <State 18>: 8.66ns
+The critical path consists of the following:
+	'ddiv' operation ('tmp_4', C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39) [126]  (8.66 ns)
+
+ <State 19>: 8.66ns
+The critical path consists of the following:
+	'ddiv' operation ('tmp_4', C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39) [126]  (8.66 ns)
+
+ <State 20>: 8.66ns
+The critical path consists of the following:
+	'ddiv' operation ('tmp_4', C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39) [126]  (8.66 ns)
+
+ <State 21>: 8.66ns
+The critical path consists of the following:
+	'ddiv' operation ('tmp_4', C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39) [126]  (8.66 ns)
+
+ <State 22>: 8.66ns
+The critical path consists of the following:
+	'ddiv' operation ('tmp_4', C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39) [126]  (8.66 ns)
+
+ <State 23>: 8.66ns
+The critical path consists of the following:
+	'ddiv' operation ('tmp_4', C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39) [126]  (8.66 ns)
+
+ <State 24>: 8.66ns
+The critical path consists of the following:
+	'ddiv' operation ('tmp_4', C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39) [126]  (8.66 ns)
+
+ <State 25>: 8.66ns
+The critical path consists of the following:
+	'ddiv' operation ('tmp_4', C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39) [126]  (8.66 ns)
+
+ <State 26>: 8.66ns
+The critical path consists of the following:
+	'ddiv' operation ('tmp_4', C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39) [126]  (8.66 ns)
+
+ <State 27>: 8.66ns
+The critical path consists of the following:
+	'ddiv' operation ('tmp_4', C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39) [126]  (8.66 ns)
+
+ <State 28>: 8.66ns
+The critical path consists of the following:
+	'ddiv' operation ('tmp_4', C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39) [126]  (8.66 ns)
+
+ <State 29>: 8.66ns
+The critical path consists of the following:
+	'ddiv' operation ('tmp_4', C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39) [126]  (8.66 ns)
+
+ <State 30>: 8.66ns
+The critical path consists of the following:
+	'ddiv' operation ('tmp_4', C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39) [126]  (8.66 ns)
+
+ <State 31>: 8.66ns
+The critical path consists of the following:
+	'ddiv' operation ('tmp_4', C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39) [126]  (8.66 ns)
+
+ <State 32>: 8.66ns
+The critical path consists of the following:
+	'ddiv' operation ('tmp_4', C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39) [126]  (8.66 ns)
+
+ <State 33>: 8.66ns
+The critical path consists of the following:
+	'ddiv' operation ('tmp_4', C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39) [126]  (8.66 ns)
+
+ <State 34>: 8.66ns
+The critical path consists of the following:
+	'ddiv' operation ('tmp_4', C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39) [126]  (8.66 ns)
+
+ <State 35>: 8.66ns
+The critical path consists of the following:
+	'ddiv' operation ('tmp_4', C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39) [126]  (8.66 ns)
+
+ <State 36>: 8.66ns
+The critical path consists of the following:
+	'ddiv' operation ('tmp_4', C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39) [126]  (8.66 ns)
+
+ <State 37>: 8.66ns
+The critical path consists of the following:
+	'ddiv' operation ('tmp_4', C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39) [126]  (8.66 ns)
+
+ <State 38>: 8.66ns
+The critical path consists of the following:
+	'ddiv' operation ('tmp_4', C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39) [126]  (8.66 ns)
+
+ <State 39>: 8.66ns
+The critical path consists of the following:
+	'ddiv' operation ('tmp_4', C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39) [126]  (8.66 ns)
+
+ <State 40>: 8.66ns
+The critical path consists of the following:
+	'ddiv' operation ('tmp_4', C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39) [126]  (8.66 ns)
+
+ <State 41>: 8.66ns
+The critical path consists of the following:
+	'ddiv' operation ('tmp_4', C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39) [126]  (8.66 ns)
+
+ <State 42>: 8.66ns
+The critical path consists of the following:
+	'ddiv' operation ('tmp_4', C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39) [126]  (8.66 ns)
+
+ <State 43>: 8.66ns
+The critical path consists of the following:
+	'ddiv' operation ('tmp_4', C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39) [126]  (8.66 ns)
+
+ <State 44>: 8.66ns
+The critical path consists of the following:
+	'ddiv' operation ('tmp_4', C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39) [126]  (8.66 ns)
+
+ <State 45>: 8.66ns
+The critical path consists of the following:
+	'ddiv' operation ('tmp_4', C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39) [126]  (8.66 ns)
+
+ <State 46>: 8.66ns
+The critical path consists of the following:
+	'ddiv' operation ('tmp_4', C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39) [126]  (8.66 ns)
+
+ <State 47>: 8.66ns
+The critical path consists of the following:
+	'ddiv' operation ('tmp_4', C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39) [126]  (8.66 ns)
+
+ <State 48>: 8.39ns
+The critical path consists of the following:
+	'dadd' operation ('tmp_5', C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39) [127]  (8.39 ns)
+
+ <State 49>: 8.39ns
+The critical path consists of the following:
+	'dadd' operation ('tmp_5', C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39) [127]  (8.39 ns)
+
+ <State 50>: 8.39ns
+The critical path consists of the following:
+	'dadd' operation ('tmp_5', C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39) [127]  (8.39 ns)
+
+ <State 51>: 8.39ns
+The critical path consists of the following:
+	'dadd' operation ('tmp_5', C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39) [127]  (8.39 ns)
+
+ <State 52>: 8.39ns
+The critical path consists of the following:
+	'dadd' operation ('tmp_5', C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39) [127]  (8.39 ns)
+
+ <State 53>: 8.39ns
+The critical path consists of the following:
+	'dadd' operation ('tmp_5', C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39) [127]  (8.39 ns)
+
+ <State 54>: 6.46ns
+The critical path consists of the following:
+	'fptrunc' operation ('score', C:/Users/Kris/OneDrive/University/MEng/ece1373/project/repoA/monkeyPlaysTetris/eiTetrisAI/elTetris2.cpp:39) [128]  (6.46 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+	State 20
+	State 21
+	State 22
+	State 23
+	State 24
+	State 25
+	State 26
+	State 27
+	State 28
+	State 29
+	State 30
+	State 31
+	State 32
+	State 33
+	State 34
+	State 35
+	State 36
+	State 37
+	State 38
+	State 39
+	State 40
+	State 41
+	State 42
+	State 43
+	State 44
+	State 45
+	State 46
+	State 47
+	State 48
+	State 49
+	State 50
+	State 51
+	State 52
+	State 53
+	State 54
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

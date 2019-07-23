@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="generateBoardMatrix.cpp" path="C:\Users\Kris\OneDrive\University\MEng\ece1373\project\repoA\monkeyPlaysTetris\commonHWFunctions\generateBoardMatrix.cpp"/>
+    <originFiles name="generateBoardMatrix.h" path="C:\Users\Kris\OneDrive\University\MEng\ece1373\project\repoA\monkeyPlaysTetris\commonHWFunctions\generateBoardMatrix.h"/>
+  </source>
+  <testbench/>
+</autopilotfilemapping:AutoPilotFileMapping>

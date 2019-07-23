@@ -1,0 +1,92 @@
+00:09:56 **** Build of configuration Debug for project Tetris_Host ****
+make all 
+'Building file: ../src/util/util.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/util/util.o" -I../../Tetris_Host_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/util/util.d" -MT"src/util/util.o" -o "src/util/util.o" "../src/util/util.cpp"
+'Finished building: ../src/util/util.cpp'
+' '
+'Building file: ../src/eiTetrisAI/eiTetris.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/eiTetrisAI/eiTetris.o" -I../../Tetris_Host_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/eiTetrisAI/eiTetris.d" -MT"src/eiTetrisAI/eiTetris.o" -o "src/eiTetrisAI/eiTetris.o" "../src/eiTetrisAI/eiTetris.cpp"
+../src/eiTetrisAI/eiTetris.cpp: In function 'int getNumberOfHoles(char*)':
+../src/eiTetrisAI/eiTetris.cpp:76:21: warning: suggest parentheses around operand of '!' or change '&' to '&&' or '!' to '~' [-Wparentheses]
+       rowHoles[j] = !board[i*MAX_WIDTH + j] & (board[(i-1)*MAX_WIDTH + j] | rowHoles[j]);
+                     ^~~~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/eiTetrisAI/eiTetris.cpp'
+' '
+'Building file: ../src/board.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/board.o" -I../../Tetris_Host_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/board.d" -MT"src/board.o" -o "src/board.o" "../src/board.cpp"
+In file included from ../src/board.h:6:0,
+                 from ../src/board.cpp:1:
+../src/piece.h: In member function 'bool piece::operator=(const piece&)':
+../src/piece.h:38:5: warning: no return statement in function returning non-void [-Wreturn-type]
+     }
+     ^
+../src/board.cpp: In member function 'int board::insert_piece(piece*, int, int)':
+../src/board.cpp:136:52: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+     if(linesCleared = clearLines(&validState[0][0]))
+                                                    ^
+'Finished building: ../src/board.cpp'
+' '
+'Building file: ../src/main.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../Tetris_Host_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cpp"
+In file included from ../src/board.h:6:0,
+                 from ../src/tetris.h:1,
+                 from ../src/main.cpp:1:
+../src/piece.h: In member function 'bool piece::operator=(const piece&)':
+../src/piece.h:38:5: warning: no return statement in function returning non-void [-Wreturn-type]
+     }
+     ^
+../src/main.cpp: In function 'int main()':
+../src/main.cpp:25:7: warning: variable 'width' set but not used [-Wunused-but-set-variable]
+   int width;
+       ^~~~~
+'Finished building: ../src/main.cpp'
+' '
+'Building file: ../src/piece.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/piece.o" -I../../Tetris_Host_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/piece.d" -MT"src/piece.o" -o "src/piece.o" "../src/piece.cpp"
+In file included from ../src/piece.cpp:3:0:
+../src/piece.h: In member function 'bool piece::operator=(const piece&)':
+../src/piece.h:38:5: warning: no return statement in function returning non-void [-Wreturn-type]
+     }
+     ^
+'Finished building: ../src/piece.cpp'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../Tetris_Host_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building file: ../src/tetris.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tetris.o" -I../../Tetris_Host_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/tetris.d" -MT"src/tetris.o" -o "src/tetris.o" "../src/tetris.cpp"
+In file included from ../src/board.h:6:0,
+                 from ../src/tetris.h:1,
+                 from ../src/tetris.cpp:1:
+../src/piece.h: In member function 'bool piece::operator=(const piece&)':
+../src/piece.h:38:5: warning: no return statement in function returning non-void [-Wreturn-type]
+     }
+     ^
+../src/tetris.cpp: In member function 'int Tetris::generate_piece()':
+../src/tetris.cpp:29:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/tetris.cpp'
+' '
+'Building target: Tetris_Host.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../Tetris_Host_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -Wl,--gc-sections -o "Tetris_Host.elf"  ./src/util/util.o  ./src/eiTetrisAI/eiTetris.o  ./src/board.o ./src/main.o ./src/piece.o ./src/platform.o ./src/tetris.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: Tetris_Host.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Tetris_Host.elf  |tee "Tetris_Host.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 145472	   1492	 131276	 278240	  43ee0	Tetris_Host.elf
+'Finished building: Tetris_Host.elf.size'
+' '
+
+00:09:58 Build Finished (took 2s.124ms)
+

@@ -1,0 +1,225 @@
+
+
+================================================================
+== Vivado HLS Report for 'getRowScores'
+================================================================
+* Date:           Tue Jun 25 00:37:12 2019
+
+* Version:        2017.2 (Build 1909853 on Thu Jun 15 18:55:24 MDT 2017)
+* Project:        elTetris2HLSCore
+* Solution:       solution1
+* Product family: artix7
+* Target device:  xc7a100tcsg324-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      8.66|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |  111|  111|  111|  111|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+        |          |  Latency  | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name| min | max |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+        |- rowRow  |   60|   60|         3|          3|          5|    20|    yes   |
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
++-----------------+---------+-------+--------+-------+
+|DSP              |        -|      -|       -|      -|
+|Expression       |        -|      -|     317|    189|
+|FIFO             |        -|      -|       -|      -|
+|Instance         |        -|     14|    4577|   4846|
+|Memory           |        -|      -|       -|      -|
+|Multiplexer      |        -|      -|       -|    309|
+|Register         |        -|      -|     427|      -|
++-----------------+---------+-------+--------+-------+
+|Total            |        0|     14|    5321|   5344|
++-----------------+---------+-------+--------+-------+
+|Available        |      270|    240|  126800|  63400|
++-----------------+---------+-------+--------+-------+
+|Utilization (%)  |        0|      5|       4|      8|
++-----------------+---------+-------+--------+-------+
+
++ Detail: 
+    * Instance: 
+    +-------------------------+----------------------+---------+-------+------+------+
+    |         Instance        |        Module        | BRAM_18K| DSP48E|  FF  |  LUT |
+    +-------------------------+----------------------+---------+-------+------+------+
+    |elTetris2_dadd_64cud_U1  |elTetris2_dadd_64cud  |        0|      3|   509|   817|
+    |elTetris2_ddiv_64eOg_U3  |elTetris2_ddiv_64eOg  |        0|      0|  3211|  3270|
+    |elTetris2_dmul_64dEe_U2  |elTetris2_dmul_64dEe  |        0|     11|   317|   204|
+    |elTetris2_fptruncbkb_U0  |elTetris2_fptruncbkb  |        0|      0|   128|   103|
+    |elTetris2_sitodp_fYi_U4  |elTetris2_sitodp_fYi  |        0|      0|   412|   452|
+    +-------------------------+----------------------+---------+-------+------+------+
+    |Total                    |                      |        0|     14|  4577|  4846|
+    +-------------------------+----------------------+---------+-------+------+------+
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +------------------------------+----------+-------+----+----+------------+------------+
+    |         Variable Name        | Operation| DSP48E| FF | LUT| Bitwidth P0| Bitwidth P1|
+    +------------------------------+----------+-------+----+----+------------+------------+
+    |elimCounter_2_s_fu_644_p2     |     +    |      0|  29|  13|           8|           8|
+    |rowTranCounter_2_s_fu_585_p2  |     +    |      0|  29|  13|           8|           8|
+    |row_1_fu_352_p2               |     +    |      0|  20|  10|           5|           1|
+    |tmp10_fu_612_p2               |     +    |      0|  14|   9|           3|           3|
+    |tmp1_fu_549_p2                |     +    |      0|  14|   9|           3|           3|
+    |tmp2_fu_501_p2                |     +    |      0|  11|   8|           2|           2|
+    |tmp3_fu_513_p2                |     +    |      0|   0|   2|           2|           2|
+    |tmp4_fu_507_p2                |     +    |      0|   0|   2|           2|           2|
+    |tmp5_fu_565_p2                |     +    |      0|  14|   9|           3|           3|
+    |tmp6_fu_525_p2                |     +    |      0|   0|   2|           2|           2|
+    |tmp7_fu_519_p2                |     +    |      0|   0|   2|           2|           2|
+    |tmp8_fu_537_p2                |     +    |      0|   0|   2|           2|           2|
+    |tmp9_fu_531_p2                |     +    |      0|   0|   2|           2|           2|
+    |tmp_10_fu_310_p2              |     +    |      0|  38|  16|          11|          11|
+    |tmp_13_fu_340_p2              |     +    |      0|  38|  16|          11|          11|
+    |tmp_14_fu_362_p2              |     +    |      0|  38|  16|          11|          11|
+    |tmp_15_fu_381_p2              |     +    |      0|  38|  16|          11|          11|
+    |tmp_16_fu_634_p2              |     +    |      0|  17|   9|           4|           4|
+    |tmp_7_fu_575_p2               |     +    |      0|  17|   9|           4|           4|
+    |exitcond1_fu_346_p2           |   icmp   |      0|   0|   2|           5|           5|
+    |tmp_6_1_fu_401_p2             |    xor   |      0|   0|   2|           1|           1|
+    |tmp_6_2_fu_411_p2             |    xor   |      0|   0|   2|           1|           1|
+    |tmp_6_3_fu_421_p2             |    xor   |      0|   0|   2|           1|           1|
+    |tmp_6_4_fu_431_p2             |    xor   |      0|   0|   2|           1|           1|
+    |tmp_6_5_fu_441_p2             |    xor   |      0|   0|   2|           1|           1|
+    |tmp_6_6_fu_451_p2             |    xor   |      0|   0|   2|           1|           1|
+    |tmp_6_7_fu_461_p2             |    xor   |      0|   0|   2|           1|           1|
+    |tmp_6_8_fu_471_p2             |    xor   |      0|   0|   2|           1|           1|
+    |tmp_6_9_fu_481_p2             |    xor   |      0|   0|   2|           1|           1|
+    |tmp_6_s_fu_491_p2             |    xor   |      0|   0|   2|           1|           2|
+    |tmp_s_fu_391_p2               |    xor   |      0|   0|   2|           1|           2|
+    +------------------------------+----------+-------+----+----+------------+------------+
+    |Total                         |          |      0| 317| 189|         112|         110|
+    +------------------------------+----------+-------+----+----+------------+------------+
+
+    * Multiplexer: 
+    +------------------------+-----+-----------+-----+-----------+
+    |          Name          | LUT | Input Size| Bits| Total Bits|
+    +------------------------+-----+-----------+-----+-----------+
+    |ap_NS_fsm               |  237|         55|    1|         55|
+    |elimCounter_reg_235     |    9|          2|    8|         16|
+    |grp_fu_266_p0           |   15|          3|   64|        192|
+    |grp_fu_266_p1           |   15|          3|   64|        192|
+    |grp_fu_277_p0           |   15|          3|   32|         96|
+    |rowTranCounter_reg_247  |    9|          2|    8|         16|
+    |row_reg_224             |    9|          2|    5|         10|
+    +------------------------+-----+-----------+-----+-----------+
+    |Total                   |  309|         70|  182|        577|
+    +------------------------+-----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------------+----+----+-----+-----------+
+    |            Name            | FF | LUT| Bits| Const Bits|
+    +----------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                   |  54|   0|   54|          0|
+    |elimCounter_reg_235         |   8|   0|    8|          0|
+    |reg_280                     |  64|   0|   64|          0|
+    |rowEliminated_load_reg_733  |   1|   0|    1|          0|
+    |rowTranCounter_reg_247      |   8|   0|    8|          0|
+    |row_1_reg_673               |   5|   0|    5|          0|
+    |row_reg_224                 |   5|   0|    5|          0|
+    |tmp2_reg_742                |   2|   0|    2|          0|
+    |tmp3_reg_747                |   2|   0|    2|          0|
+    |tmp6_reg_752                |   2|   0|    2|          0|
+    |tmp8_reg_757                |   2|   0|    2|          0|
+    |tmp_10_reg_660              |   9|   0|   11|          2|
+    |tmp_13_reg_665              |   9|   0|   11|          2|
+    |tmp_2_reg_782               |  64|   0|   64|          0|
+    |tmp_4_reg_792               |  64|   0|   64|          0|
+    |tmp_5_reg_797               |  64|   0|   64|          0|
+    |tmp_reg_787                 |  64|   0|   64|          0|
+    +----------------------------+----+----+-----+-----------+
+    |Total                       | 427|   0|  431|          4|
+    +----------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------------+-----+-----+------------+---------------+--------------+
+|        RTL Ports       | Dir | Bits|  Protocol  | Source Object |    C Type    |
++------------------------+-----+-----+------------+---------------+--------------+
+|ap_clk                  |  in |    1| ap_ctrl_hs |  getRowScores | return value |
+|ap_rst                  |  in |    1| ap_ctrl_hs |  getRowScores | return value |
+|ap_start                |  in |    1| ap_ctrl_hs |  getRowScores | return value |
+|ap_done                 | out |    1| ap_ctrl_hs |  getRowScores | return value |
+|ap_idle                 | out |    1| ap_ctrl_hs |  getRowScores | return value |
+|ap_ready                | out |    1| ap_ctrl_hs |  getRowScores | return value |
+|ap_return               | out |   32| ap_ctrl_hs |  getRowScores | return value |
+|board_0_address0        | out |   10|  ap_memory |    board_0    |     array    |
+|board_0_ce0             | out |    1|  ap_memory |    board_0    |     array    |
+|board_0_q0              |  in |    1|  ap_memory |    board_0    |     array    |
+|board_1_address0        | out |   10|  ap_memory |    board_1    |     array    |
+|board_1_ce0             | out |    1|  ap_memory |    board_1    |     array    |
+|board_1_q0              |  in |    1|  ap_memory |    board_1    |     array    |
+|board_2_address0        | out |   10|  ap_memory |    board_2    |     array    |
+|board_2_ce0             | out |    1|  ap_memory |    board_2    |     array    |
+|board_2_q0              |  in |    1|  ap_memory |    board_2    |     array    |
+|board_3_address0        | out |   10|  ap_memory |    board_3    |     array    |
+|board_3_ce0             | out |    1|  ap_memory |    board_3    |     array    |
+|board_3_q0              |  in |    1|  ap_memory |    board_3    |     array    |
+|board_4_address0        | out |   10|  ap_memory |    board_4    |     array    |
+|board_4_ce0             | out |    1|  ap_memory |    board_4    |     array    |
+|board_4_q0              |  in |    1|  ap_memory |    board_4    |     array    |
+|board_5_address0        | out |   10|  ap_memory |    board_5    |     array    |
+|board_5_ce0             | out |    1|  ap_memory |    board_5    |     array    |
+|board_5_q0              |  in |    1|  ap_memory |    board_5    |     array    |
+|board_6_address0        | out |   10|  ap_memory |    board_6    |     array    |
+|board_6_ce0             | out |    1|  ap_memory |    board_6    |     array    |
+|board_6_q0              |  in |    1|  ap_memory |    board_6    |     array    |
+|board_7_address0        | out |   10|  ap_memory |    board_7    |     array    |
+|board_7_ce0             | out |    1|  ap_memory |    board_7    |     array    |
+|board_7_q0              |  in |    1|  ap_memory |    board_7    |     array    |
+|board_8_address0        | out |   10|  ap_memory |    board_8    |     array    |
+|board_8_ce0             | out |    1|  ap_memory |    board_8    |     array    |
+|board_8_q0              |  in |    1|  ap_memory |    board_8    |     array    |
+|board_9_address0        | out |   10|  ap_memory |    board_9    |     array    |
+|board_9_ce0             | out |    1|  ap_memory |    board_9    |     array    |
+|board_9_q0              |  in |    1|  ap_memory |    board_9    |     array    |
+|batch3                  |  in |    6|   ap_none  |     batch3    |    scalar    |
+|rowEliminated_address0  | out |   10|  ap_memory | rowEliminated |     array    |
+|rowEliminated_ce0       | out |    1|  ap_memory | rowEliminated |     array    |
+|rowEliminated_q0        |  in |    1|  ap_memory | rowEliminated |     array    |
+|batch31                 |  in |    6|   ap_none  |    batch31    |    scalar    |
++------------------------+-----+-----+------------+---------------+--------------+
+

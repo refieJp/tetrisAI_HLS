@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] RTL name 'elTetris2_sitodp_fYi' is changed to 'elTetris2_sitodp_fYi_x' due to conflict." projectName="elTetris2HLSCore" solutionName="solution1" date="2019-06-25T00:37:19.837-0400" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] RTL name 'elTetris2_dmul_64dEe' is changed to 'elTetris2_dmul_64dEe_x' due to conflict." projectName="elTetris2HLSCore" solutionName="solution1" date="2019-06-25T00:37:16.104-0400" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] RTL name 'elTetris2_fptruncbkb' is changed to 'elTetris2_fptruncbkb_x' due to conflict." projectName="elTetris2HLSCore" solutionName="solution1" date="2019-06-25T00:37:16.101-0400" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] RTL name 'elTetris2_sitodp_fYi' is changed to 'elTetris2_sitodp_fYi_x' due to conflict." projectName="elTetris2HLSCore" solutionName="solution1" date="2019-06-25T00:37:13.309-0400" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] RTL name 'elTetris2_dmul_64dEe' is changed to 'elTetris2_dmul_64dEe_x' due to conflict." projectName="elTetris2HLSCore" solutionName="solution1" date="2019-06-25T00:37:13.237-0400" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] RTL name 'elTetris2_dadd_64cud' is changed to 'elTetris2_dadd_64cud_x' due to conflict." projectName="elTetris2HLSCore" solutionName="solution1" date="2019-06-25T00:37:13.233-0400" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] RTL name 'elTetris2_fptruncbkb' is changed to 'elTetris2_fptruncbkb_x' due to conflict." projectName="elTetris2HLSCore" solutionName="solution1" date="2019-06-25T00:37:13.229-0400" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'elTetris2_ap_sitodp_4_no_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="elTetris2HLSCore" solutionName="solution1" date="2019-06-25T00:38:00.625-0400" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'elTetris2_ap_fptrunc_0_no_dsp_64' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="elTetris2HLSCore" solutionName="solution1" date="2019-06-25T00:37:59.218-0400" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'elTetris2_ap_fadd_3_full_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="elTetris2HLSCore" solutionName="solution1" date="2019-06-25T00:37:57.935-0400" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'elTetris2_ap_dmul_4_max_dsp_64' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="elTetris2HLSCore" solutionName="solution1" date="2019-06-25T00:37:56.778-0400" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'elTetris2_ap_ddiv_29_no_dsp_64' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="elTetris2HLSCore" solutionName="solution1" date="2019-06-25T00:37:54.958-0400" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'elTetris2_ap_dadd_4_full_dsp_64' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="elTetris2HLSCore" solutionName="solution1" date="2019-06-25T00:37:53.652-0400" type="Warning"/>
+      </packageLog>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

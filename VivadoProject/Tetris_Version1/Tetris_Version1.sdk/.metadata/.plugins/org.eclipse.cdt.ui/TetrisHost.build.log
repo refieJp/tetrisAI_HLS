@@ -1,0 +1,6 @@
+03:27:04 **** Incremental Build of configuration Debug for project TetrisHost ****
+make all 
+make: Nothing to be done for `all'.
+
+03:27:04 Build Finished (took 399ms)
+

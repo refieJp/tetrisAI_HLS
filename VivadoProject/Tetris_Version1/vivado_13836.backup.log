@@ -1,0 +1,103 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Mon Jul 22 21:40:07 2019
+# Process ID: 13836
+# Current directory: D:/Tetris_Design/Tetris_Version1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4716 D:\Tetris_Design\Tetris_Version1\Tetris_Version1.xpr
+# Log file: D:/Tetris_Design/Tetris_Version1/vivado.log
+# Journal file: D:/Tetris_Design/Tetris_Version1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Tetris_Design/Tetris_Version1/Tetris_Version1.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/HLS'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2017.2/data/ip'.
+WARNING: [IP_Flow 19-3664] IP 'design_1_mig_7series_0_0' generated file not found 'd:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_0/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_s04_data_fifo_0' generated file not found 'd:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ip/design_1_s04_data_fifo_0/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_s02_data_fifo_0' generated file not found 'd:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ip/design_1_s02_data_fifo_0/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_auto_us_6' generated file not found 'd:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ip/design_1_auto_us_6/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_s01_data_fifo_0' generated file not found 'd:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ip/design_1_s01_data_fifo_0/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_auto_us_5' generated file not found 'd:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ip/design_1_auto_us_5/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_s00_data_fifo_0' generated file not found 'd:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ip/design_1_s00_data_fifo_0/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_auto_us_4' generated file not found 'd:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ip/design_1_auto_us_4/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_auto_ds_8' generated file not found 'd:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_8/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_auto_pc_8' generated file not found 'd:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_8/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_auto_ds_6' generated file not found 'd:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_6/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_auto_pc_6' generated file not found 'd:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_6/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_auto_ds_5' generated file not found 'd:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_5/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_auto_pc_5' generated file not found 'd:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_5/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_auto_ds_4' generated file not found 'd:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_4/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_auto_pc_4' generated file not found 'd:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_4/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_auto_ds_3' generated file not found 'd:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_3/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_auto_pc_3' generated file not found 'd:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_3/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_m03_data_fifo_0' generated file not found 'd:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ip/design_1_m03_data_fifo_0/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_auto_ds_2' generated file not found 'd:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_2/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_auto_pc_2' generated file not found 'd:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_2/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_auto_ds_1' generated file not found 'd:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_1/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_auto_pc_1' generated file not found 'd:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_1/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_auto_ds_0' generated file not found 'd:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_0/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_auto_pc_0' generated file not found 'd:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_auto_pc_10' generated file not found 'd:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_10/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_auto_us_3' generated file not found 'd:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ip/design_1_auto_us_3/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_auto_us_2' generated file not found 'd:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ip/design_1_auto_us_2/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_auto_us_1' generated file not found 'd:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ip/design_1_auto_us_1/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_auto_pc_9' generated file not found 'd:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_9/stats.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'design_1_auto_us_0' generated file not found 'd:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ip/design_1_auto_us_0/stats.txt'. Please regenerate to continue.
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:28 . Memory (MB): peak = 1013.492 ; gain = 256.895
+update_compile_order -fileset sources_1
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 5404 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 2 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.2
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [D:/Tetris_Design/Tetris_Version1/.Xil/Vivado-13836-Kris-PC/dcp1/design_1_wrapper_board.xdc]
+Finished Parsing XDC File [D:/Tetris_Design/Tetris_Version1/.Xil/Vivado-13836-Kris-PC/dcp1/design_1_wrapper_board.xdc]
+Parsing XDC File [D:/Tetris_Design/Tetris_Version1/.Xil/Vivado-13836-Kris-PC/dcp1/design_1_wrapper_early.xdc]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [D:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0.xdc:50]
+get_clocks: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2357.980 ; gain = 611.316
+INFO: [Timing 38-2] Deriving generated clocks [D:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0.xdc:57]
+Finished Parsing XDC File [D:/Tetris_Design/Tetris_Version1/.Xil/Vivado-13836-Kris-PC/dcp1/design_1_wrapper_early.xdc]
+Parsing XDC File [D:/Tetris_Design/Tetris_Version1/.Xil/Vivado-13836-Kris-PC/dcp1/design_1_wrapper.xdc]
+Finished Parsing XDC File [D:/Tetris_Design/Tetris_Version1/.Xil/Vivado-13836-Kris-PC/dcp1/design_1_wrapper.xdc]
+Parsing XDC File [D:/Tetris_Design/Tetris_Version1/.Xil/Vivado-13836-Kris-PC/dcp1/design_1_wrapper_late.xdc]
+Finished Parsing XDC File [D:/Tetris_Design/Tetris_Version1/.Xil/Vivado-13836-Kris-PC/dcp1/design_1_wrapper_late.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2521.305 ; gain = 123.180
+Restored from archive | CPU: 7.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2521.305 ; gain = 123.180
+Generating merged BMM file for the design top 'design_1_wrapper'...
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: d:/Tetris_Design/Tetris_Version1/Tetris_Version1.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/data/mb_bootloop_le.elf 
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 846 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 5 instances
+  IOBUFDS_INTERMDISABLE => IOBUFDS_INTERMDISABLE (IBUFDS_INTERMDISABLE_INT, IBUFDS_INTERMDISABLE_INT, OBUFTDS, OBUFTDS, INV): 2 instances
+  IOBUF_INTERMDISABLE => IOBUF_INTERMDISABLE (IBUF_INTERMDISABLE, OBUFT): 16 instances
+  LUT6_2 => LUT6_2 (LUT6, LUT5): 78 instances
+  OBUFDS => OBUFDS_DUAL_BUF (OBUFDS, OBUFDS, INV): 1 instances
+  RAM128X1D => RAM128X1D (RAMD64E, RAMD64E, RAMD64E, RAMD64E, MUXF7, MUXF7): 60 instances
+  RAM16X1D => RAM32X1D (RAMD32, RAMD32): 72 instances
+  RAM16X1S => RAM32X1S (RAMS32): 32 instances
+  RAM256X1S => RAM256X1S (RAMS64E, RAMS64E, RAMS64E, RAMS64E, MUXF7, MUXF7, MUXF8): 30 instances
+  RAM32M => RAM32M (RAMS32, RAMS32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32): 462 instances
+  RAM32X1D => RAM32X1D (RAMD32, RAMD32): 32 instances
+  RAM32X1S => RAM32X1S (RAMS32): 38 instances
+  SRLC16E => SRL16E: 1 instances
+  SRLC32E => SRL16E: 17 instances
+
+open_run: Time (s): cpu = 00:00:59 ; elapsed = 00:01:00 . Memory (MB): peak = 2626.930 ; gain = 1487.707
+open_report: Time (s): cpu = 00:00:22 ; elapsed = 00:00:10 . Memory (MB): peak = 2784.418 ; gain = 143.664
+report_utilization -name utilization_1
+report_utilization: Time (s): cpu = 00:00:39 ; elapsed = 00:00:16 . Memory (MB): peak = 3203.234 ; gain = 383.414
+report_utilization: Time (s): cpu = 00:00:39 ; elapsed = 00:00:16 . Memory (MB): peak = 3203.234 ; gain = 383.414
+report_utilization -file D:/Tetris_Design/utilization.txt -name utilization_2
+report_utilization: Time (s): cpu = 00:00:36 ; elapsed = 00:00:15 . Memory (MB): peak = 3318.438 ; gain = 91.707
+report_utilization: Time (s): cpu = 00:00:36 ; elapsed = 00:00:15 . Memory (MB): peak = 3318.438 ; gain = 91.707
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Jul 23 00:19:08 2019...
